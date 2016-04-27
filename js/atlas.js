@@ -836,8 +836,8 @@ function ShowChromosome(name, start, end){
 
 	document.onmouseup = function(e){
 		if (!isNaN(dx)) {
-			start = (ox)*size/w;
-			end = (ox + dx)*size/w;
+			start = (ox)*size/ww;
+			end = (ox + dx)*size/ww;
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + start + ".." + end, function(err) {});			
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
