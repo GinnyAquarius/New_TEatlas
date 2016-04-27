@@ -134,8 +134,8 @@ function query_score(layer, type){
 						chip_seq_range["score"][s + pos] = filter["score"][s];
 
 					for (var i = 0; i < filter["score"].length; i++){
-						if (filter["score"][i][k] < minVal) minVal = filter["score"][i];
-						if (filter["score"][i][k] > maxVal) maxVal = filter["score"][i];
+						if (filter["score"][i] < minVal) minVal = filter["score"][i];
+						if (filter["score"][i] > maxVal) maxVal = filter["score"][i];
 					}
 
 					++count;
@@ -441,7 +441,8 @@ function SamplesHM(chr){
 // Parse samples files. Separators: Col: "\t", Row: "\n"
 function Parse(content, filename){
 	var x = filename.indexOf(".csv");
-	filename = filename.substr(0, x);
+	if (x != -1)
+		filename = filename.substr(0, x);
 	filename = filename.replace(/\./g, "_")
 
 	for (var i in file_list)
@@ -472,7 +473,7 @@ function Parse(content, filename){
 
 			// Use to trace for turn on/off element and show inf when needed
 			var id = c[0] + '-' + filename + '-' + c[1] + '-' + c[2];
-			id_list[id] = [0];
+			id_list[id] = 0;
 			
 
 			if (c[7] == '')
@@ -702,8 +703,8 @@ function load_detail_content(name, start, end){
 			if (content[0] < start) continue;
 			if (content[0] > end) break;
 			if ((visibleType != 0 && visibleType != content[2]) ||
-				(visibleMode == 1 && id_list[content[7]][0] == 1) ||
-				(visibleMode == 2 && id_list[content[7]][0] == 0)) continue;
+				(visibleMode == 1 && id_list[content[7]] == 1) ||
+				(visibleMode == 2 && id_list[content[7]] == 0)) continue;
 			var x = (content[0]-start)*3300/(end-start);
 			if (x < last_x + 120){
 					y += 15
@@ -833,7 +834,8 @@ function ShowChromosome(name, start, end){
 
 	document.onmouseup = function(e){
 		if (!isNaN(dx)) {
-			Resized([(ox)*size/1100, (ox + dx)*size/1100]);
+			start = (ox)*size/1100;
+			end = (ox + dx)*size/1100;
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ox)*size/1100 + ".." + (ox + dx)*size/1100, function(err) {});			
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';

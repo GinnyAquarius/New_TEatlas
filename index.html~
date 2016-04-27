@@ -116,7 +116,7 @@
 			<a class="btn btn-default showtree"><span class="glyphicon glyphicon-grain"></span> Phylogenetic tree</a>
 		</div>
 		<div class="btn-group" style="margin-right:0">
-			<button class="btn btn-default dropdown-toggle  chipseqLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 3px 0px 0px 3px">
+			<button class="btn btn-default dropdown-toggle chipseqLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 3px 0px 0px 3px">
 				H3K27Ac <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu chipseq_layer">

@@ -170,9 +170,9 @@ function get_idlist(){
 
 			for (var pos = 0; pos < expData[chr][name].length; pos++){
 				var id = expData[chr][name][pos][5]; 
-				id_list[id][0] = 0;
+				id_list[id] = 0;
 				for (var k = 1; k < tmp[id].length; k++)
-					id_list[id][k] = tmp[id][k]
+					id_list[id] = tmp[i]
 			}
 		}
 	}	
@@ -217,13 +217,13 @@ function add_common(chr, pos, type, id, name){
 
 	++density_map[chr][name][cell][type+3];
 
-	id_list[id][0] = 1;
+	id_list[id] = 1;
 }
 
 function init(){
 	for (var id in id_list){
 		if (id.localeCompare("map") == 0) continue;
-		 id_list[id][0] = 0;
+		 id_list[id] = 0;
 	}
 
 	for (var chr in density_map){
