@@ -795,6 +795,7 @@ function ShowChromosome(name, start, end){
 		if (xx[0] > xx[1]) xx = [xx[1], xx[0]];
 		var e = RangeParse(xx[0], xx[1]);
 		ResizePre(xx);
+		console.log(xx);
 		// black blur "blinds"
 		$('#cs-lh-F')[0].style.width = (e[0] * 100 / ww) + '%';
 		$('#cs-rh-F')[0].style.left  = (e[1] * 100 / ww) + '%';
@@ -805,7 +806,7 @@ function ShowChromosome(name, start, end){
 		load_detail_content(name, bp1, bp2);
 	};
 
-	var px,ox,dx, tx,vx,ix;
+	var px,ox,dx, tx,vx,ix, s = start, e = end;
 	// Select range (chromosome)
 	$("#range")[0].onmousedown = function(e){
 		ox = e.offsetX;
@@ -834,15 +835,15 @@ function ShowChromosome(name, start, end){
 
 	document.onmouseup = function(e){
 		if (!isNaN(dx)) {
-			start = (ox)*size/1100;
-			end = (ox + dx)*size/1100;
+			s = (ox)*size/1100;
+			e = (ox + dx)*size/1100;
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ox)*size/1100 + ".." + (ox + dx)*size/1100, function(err) {});			
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 			}
 		if (!isNaN(vx)) {
-			start = (ix[0] + vx*3)*size/ww;
-			end = (ix[1] + vx*3)*size/ww;
+			s = (ix[0] + vx*3)*size/ww;
+			e = (ix[1] + vx*3)*size/ww;
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ix[0] + vx*3)*size/ww + ".." + (ix[1] + vx*3)*size/ww, function(err) {});
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
@@ -850,8 +851,10 @@ function ShowChromosome(name, start, end){
 		box.style.display = 'none';
 		ox = NaN, px = NaN, dx = NaN, tx = NaN, vx = NaN;
 	};
-
-	Resized([start, end]);
+	if (s == start && e == end)
+		Resized([start, end]);
+	else
+		
 	$(".status").css("visibility", "hidden");
 }
 
