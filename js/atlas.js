@@ -767,13 +767,16 @@ function ShowChromosome(name, start, end){
 	var sl = $('#range')[0], 
 	    place = $('#chr-one')[0],
 	    box = $('#sel-box')[0];
-	var ww = 3300;
+	var ww = 1100;
 	var current = [0,1], detail = 0;
 	ora = [0,1];	
 
 	// Resize
 	var RangeParse = function(start, end){
 		// to pixels
+		start = start < 0? 0: start > size? size: start;
+		end = end < 0? 0: end > size? size: end;
+
 		var x1 = ww * start / size; 
 		var x2 = ww * end / size;
 		ora = start < end ? [start, end] : [end, start];
@@ -787,8 +790,8 @@ function ShowChromosome(name, start, end){
 	var ResizePre = function(xx){
 		var e = RangeParse(xx[0], xx[1]);
 		// Select-range-box
-		box.style.left = e[0]/3 + 'px';
-		box.style.width = e[1]/3 - e[0]/3 + 'px';
+		box.style.left = e[0]+ 'px';
+		box.style.width = (e[1] - e[0]) + 'px';
 	};
 
 	var Resized = function(xx){
@@ -821,27 +824,26 @@ function ShowChromosome(name, start, end){
 		if (!isNaN(ox)) {
 			if (isNaN(dx)) box.style.display = 'block';
 			dx = e.pageX - px;
-			ResizePre([(ox)*size/1100, (ox + dx)*size/1100]);
+			ResizePre([(ox)*size/ww, (ox + dx)*size/ww]);
 		}
 		// Move range ?
 		if (!isNaN(tx)) {
 			if (isNaN(vx)) box.style.display = 'block';
 			vx = -(e.pageX - tx) * (ix[1] - ix[0]) / ww;
-			$(".detail_content").css("margin-left", (e.pageX - tx - 1100) + "px");
+			$(".detail_content").css("margin-left", (e.pageX - tx - ww) + "px");
 			ResizePre([(ix[0] + vx)*size/ww, (ix[1] + vx)*size/ww]);
 		}
 	};
 
 	document.onmouseup = function(e){
 		if (!isNaN(dx)) {
-			Resized([(ox)*size/1100, (ox + dx)*size/1100]);
+			Resized([(ox)*size/ww, (ox + dx)*size/ww]);
 			var obj = getBwtWeb('svgHolderT0');
- 			obj.search(name.substr(3)+ ":" + (ox)*size/1100 + ".." + (ox + dx)*size/1100, function(err) {});			
+ 			obj.search(name.substr(3)+ ":" + (ox)*size/ww + ".." + (ox + dx)*size/ww, function(err) {});			
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 			}
 		if (!isNaN(vx)) {
-			start = (ix[0] + vx*3)*size/ww;
-			end = (ix[1] + vx*3)*size/ww;
+			Resized([(ix[0] + vx*3)*size/ww, (ix[1] + vx*3)*size/ww];
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ix[0] + vx*3)*size/ww + ".." + (ix[1] + vx*3)*size/ww, function(err) {});
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
