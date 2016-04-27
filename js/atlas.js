@@ -823,7 +823,7 @@ function ShowChromosome(name, start, end){
 		if (!isNaN(ox)) {
 			if (isNaN(dx)) box.style.display = 'block';
 			dx = e.pageX - px;
-			ResizePre([(ox)*size/w, (ox + dx)*size/w]);
+			ResizePre([(ox)*size/ww, (ox + dx)*size/ww]);
 		}
 		// Move range ?
 		if (!isNaN(tx)) {
