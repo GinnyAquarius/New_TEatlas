@@ -843,9 +843,13 @@ function ShowChromosome(name, start, end){
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 			}
 		if (!isNaN(vx)) {
-			Resized([(ix[0] + vx)*size/ww, (ix[1] + vx)*size/ww]);
+			var s = (ix[0] + vx)*size/ww;
+			var e = (ix[1] + vx)*size/ww;
+			if (s < 0) s = 0;
+			if (e > size) e = size;
+			Resized([s, e]);
 			var obj = getBwtWeb('svgHolderT0');
- 			obj.search(name.substr(3)+ ":" + (ix[0] + vx)*size/ww + ".." + (ix[1] + vx)*size/ww, function(err) {});
+ 			obj.search(name.substr(3)+ ":" + s + ".." + e, function(err) {});
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 		}
 		box.style.display = 'none';
