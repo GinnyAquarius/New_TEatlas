@@ -838,6 +838,7 @@ function ShowChromosome(name, start, end){
 		if (!isNaN(dx)) {
 			start = (ox)*size/ww;
 			end = (ox + dx)*size/ww;
+			Resized([start, end]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + start + ".." + end, function(err) {});			
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
@@ -845,6 +846,7 @@ function ShowChromosome(name, start, end){
 		if (!isNaN(vx)) {
 			start = ix[0] + vx*size/ww;
 			end = ix[1] + vx*size/ww;
+			Resized([start, end]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + start + ".." + end, function(err) {});
 			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
