@@ -347,9 +347,6 @@ function SamplesLoaded(){
 				return;
 			}
 		})
-		.on("mouseup", function(e){
-			is_fil = false;
-		})
 }
 
 function filter_score(score){	
@@ -745,9 +742,7 @@ function load_detail_content(name, start, end){
 function ShowChromosome(name, start, end){
 	$(".list_name").html(name.charAt(0).toUpperCase() + name.substr(1) + '<span class="caret"></span>');
 	$(".gene_wrap").css({"visibility": "visible", "height": "auto"});
-	setTimeout(function(){
-		doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
-	}, 1000);
+	doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 
 	// Impossible states:
 	if (!chrs[name])
@@ -845,6 +840,8 @@ function ShowChromosome(name, start, end){
 		if (!isNaN(vx)) {
 			var s = (ix[0] + vx)*size/ww;
 			var e = (ix[1] + vx)*size/ww;
+			if (s < 0) s = 0;
+			if (e > size) e = size;
 			Resized([s, e]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + s + ".." + e, function(err) {});

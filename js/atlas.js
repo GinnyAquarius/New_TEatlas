@@ -326,10 +326,13 @@ function SamplesLoaded(){
 	var is_fil = false, xpos = 0, left = 0, minVal, maxVal, score;
 	$(".chipFil")
 		.on("mousedown", function(e){
-			is_fil = true;
-			xpos = e.pageX;
-			minVal = parseInt($(".chipMin").html());
-			maxVal = parseInt($(".chipMax").html());
+			if (is_fil) is_fil = false;
+			else{
+				is_fil = true;
+				xpos = e.pageX;
+				minVal = parseInt($(".chipMin").html());
+				maxVal = parseInt($(".chipMax").html());
+			}
 		})
 		.on("mousemove", function(e){
 			if (!is_fil) return;
@@ -346,9 +349,6 @@ function SamplesLoaded(){
 				is_fil = false;
 				return;
 			}
-		})
-		.on("mouseup", function(e){
-			is_fil = false;
 		})
 }
 
@@ -745,9 +745,7 @@ function load_detail_content(name, start, end){
 function ShowChromosome(name, start, end){
 	$(".list_name").html(name.charAt(0).toUpperCase() + name.substr(1) + '<span class="caret"></span>');
 	$(".gene_wrap").css({"visibility": "visible", "height": "auto"});
-	setTimeout(function(){
-		doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
-	}, 1000);
+	doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 
 	// Impossible states:
 	if (!chrs[name])
