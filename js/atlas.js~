@@ -326,10 +326,13 @@ function SamplesLoaded(){
 	var is_fil = false, xpos = 0, left = 0, minVal, maxVal, score;
 	$(".chipFil")
 		.on("mousedown", function(e){
-			is_fil = true;
-			xpos = e.pageX;
-			minVal = parseInt($(".chipMin").html());
-			maxVal = parseInt($(".chipMax").html());
+			if (is_fil) is_fil = false;
+			else{
+				is_fil = true;
+				xpos = e.pageX;
+				minVal = parseFloat($(".chipMin").html())*100;
+				maxVal = parseFloat($(".chipMax").html())*100;
+			}
 		})
 		.on("mousemove", function(e){
 			if (!is_fil) return;
@@ -337,7 +340,7 @@ function SamplesLoaded(){
 			if (left < 0) left = 0;
 			else if (left > 141)
 				left = 141;
-			score = parseInt(left*(maxVal-minVal)/141 + minVal);
+			score = parseInt(left*(maxVal-minVal)/141 + minVal)/100;
 			$(".chipScore").html(score);
 			$(this).css("left", left); 
 			xpos = e.pageX;

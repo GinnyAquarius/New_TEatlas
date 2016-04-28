@@ -140,8 +140,8 @@ function query_score(layer, type){
 
 					++count;
 					if (count == total){
-						$(".chipMin").html(minVal == 100000? 0 : minVal);
-						$(".chipScore").html(minVal == 100000? 0 : minVal);
+						$(".chipMin").html(minVal == 100000? 0 : minVal/100);
+						$(".chipScore").html(minVal == 100000? 0 : minVal/100);
 						$(".chipMax").html(maxVal == -100000? 0 : maxVal);
 						$(".chipFil").css("left", "0px");
 						$(".filter").css("display", "inline-block");
@@ -330,8 +330,8 @@ function SamplesLoaded(){
 			else{
 				is_fil = true;
 				xpos = e.pageX;
-				minVal = parseInt($(".chipMin").html());
-				maxVal = parseInt($(".chipMax").html());
+				minVal = parseFloat($(".chipMin").html())*100;
+				maxVal = parseFloat($(".chipMax").html())*100;
 			}
 		})
 		.on("mousemove", function(e){
@@ -340,7 +340,7 @@ function SamplesLoaded(){
 			if (left < 0) left = 0;
 			else if (left > 141)
 				left = 141;
-			score = parseInt(left*(maxVal-minVal)/141 + minVal);
+			score = parseInt(left*(maxVal-minVal)/141 + minVal)/100;
 			$(".chipScore").html(score);
 			$(this).css("left", left); 
 			xpos = e.pageX;
