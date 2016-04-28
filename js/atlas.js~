@@ -140,8 +140,8 @@ function query_score(layer, type){
 
 					++count;
 					if (count == total){
-						$(".chipMin").html(minVal == 100000? 0 : minVal);
-						$(".chipScore").html(minVal == 100000? 0 : minVal);
+						$(".chipMin").html(minVal == 100000? 0 : minVal/100);
+						$(".chipScore").html(minVal == 100000? 0 : minVal/100);
 						$(".chipMax").html(maxVal == -100000? 0 : maxVal);
 						$(".chipFil").css("left", "0px");
 						$(".filter").css("display", "inline-block");
