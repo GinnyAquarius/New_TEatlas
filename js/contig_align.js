@@ -229,7 +229,7 @@ function draw_seq(info, ref, len){
 			var r = align_seq(seq[i], ref);
 			if(r["_"] > 10) continue;
 			x = r.p*11 + 100;
-			if (i > 0 && (r.p > end || r.p + r.s.length < start)) y -= 25;
+//			if (i > 0 && (r.p > end || r.p + r.s.length < start)) y -= 25;
 			for (var k = 0, j = k + r.p; k < r.s.length && k < ref.length + r.p; k++, j++, x += 11){
 				if (ref[j] == ".") break;
 				if (r.s[k].indexOf('*') != -1){
@@ -248,7 +248,7 @@ function draw_seq(info, ref, len){
 			if (r.p + r.s.length > end){
 				end = r.p + r.s.length
 			}
-			 y += 25
+//			 y += 25
 		}
 		last_left = -start*11 - 100;
 		if (last_left > 0) last_left = 0;
@@ -306,12 +306,12 @@ function align_contig(id){
 
 		len = ref.length*11 + 200;
 		if (info[6] != "Unknown")
-			height = info[6].split("/").length*25 + 90;
+			height = /*info[6].split("/").length*/25 + 90;
 		else
 			height = 90;
 	} else if (info[6] != "Unknown"){
 		var seq = info[6].split("/");
-		height = seq.length*25 + 90
+		height = /*seq.length*/ 25 + 90
 		len = 10;
 		for (var i = 0; i < seq.length; i++)
 			len += seq[i].length*11;
@@ -399,7 +399,7 @@ function align_seq(s1, s2){
 			--l1;
 			--l2;
 		} else if (Matrix[l1][l2] == Matrix[l1-1][l2] - 2){
-			r["s"].push(s1[l1-1] + "*");
+			r["s"].push("*");
 			--l1;
 		} else {
 			if (start){

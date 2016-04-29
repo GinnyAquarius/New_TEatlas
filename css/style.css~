@@ -841,3 +841,13 @@ hr {
 	text-align: center;
 }
 
+#all_contig {
+	position: relative;
+	display:block;
+	width: 90%;
+	height: 50px;
+	overflow-y: scroll;
+	margin: auto;
+	border: 1px solid;
+}
+

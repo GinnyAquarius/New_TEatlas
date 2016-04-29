@@ -845,9 +845,10 @@ hr {
 	position: relative;
 	display:block;
 	width: 90%;
-	height: 50px;
+	height: 100px;
 	overflow-y: scroll;
 	margin: auto;
+	margin-bottom: 10px;
 	border: 1px solid;
 }
 
