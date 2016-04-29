@@ -227,7 +227,6 @@ function draw_seq(info, ref, len){
 		for (var i = 0, y = 90; i < seq.length; i++){
 			seq[i] = seq[i].split("");
 			var r = align_seq(seq[i], ref);
-			if(r["_"] > 10) continue;
 			x = r.p*11 + 100;
 			if (i > 0 && (r.p > end || r.p + r.s.length < start)) y -= 25;
 			for (var k = 0, j = k + r.p; k < r.s.length && k < ref.length + r.p; k++, j++, x += 11){
@@ -356,8 +355,7 @@ function align_contig(id){
 			}
 			mousedown = false;
 		});
-
-		$("#detail").append("<div id='all_contig'></div>")
+		
 }
 
 function align_seq(s1, s2){
