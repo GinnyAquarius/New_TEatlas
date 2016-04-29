@@ -306,12 +306,12 @@ function align_contig(id){
 
 		len = ref.length*11 + 200;
 		if (info[6] != "Unknown")
-			height = info[6].split("/").length*25 + 90;
+			height = /*info[6].split("/").length*/25 + 90;
 		else
 			height = 90;
 	} else if (info[6] != "Unknown"){
 		var seq = info[6].split("/");
-		height = /*seq.length*/ 25 + 90
+		height = /*seq.length*/ 25 + 90;
 		len = 10;
 		for (var i = 0; i < seq.length; i++)
 			len += seq[i].length*11;
@@ -323,9 +323,10 @@ function align_contig(id){
 	$(".mini_wrap").append(function(){
 			return $("<canvas/>")
 				.attr("width",  len)
-				.attr("height", height)
+				.attr("height", 115)
 				.attr("class", "mini_browser")
 	});
+
 	draw_seq(info, ref, len);
 
 	if (info[6] != "Unknown")

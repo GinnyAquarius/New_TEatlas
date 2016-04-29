@@ -311,7 +311,7 @@ function align_contig(id){
 			height = 90;
 	} else if (info[6] != "Unknown"){
 		var seq = info[6].split("/");
-		height = /*seq.length*/ 25 + 90
+		height = /*seq.length*/ 25 + 90;
 		len = 10;
 		for (var i = 0; i < seq.length; i++)
 			len += seq[i].length*11;
@@ -326,6 +326,7 @@ function align_contig(id){
 				.attr("height", height)
 				.attr("class", "mini_browser")
 	});
+
 	draw_seq(info, ref, len);
 
 	if (info[6] != "Unknown")
