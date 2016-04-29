@@ -592,7 +592,7 @@ function load_detail_content(name, start, end){
 
 	var layer = $('.chipseqLabel').text().replace(/\s/g, '');	
 	var screen = end-start;
-	var chip_height = 50;
+	var chip_height = 60;
 	start -= screen;
 	end += screen;
 	chip_seq_range["pos"] = [start, end];
@@ -745,7 +745,9 @@ function load_detail_content(name, start, end){
 function ShowChromosome(name, start, end){
 	$(".list_name").html(name.charAt(0).toUpperCase() + name.substr(1) + '<span class="caret"></span>');
 	$(".gene_wrap").css({"visibility": "visible", "height": "auto"});
-	doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
+	setTimeout(function(){
+		doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
+	}, 2000);
 
 	// Impossible states:
 	if (!chrs[name])

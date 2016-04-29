@@ -592,7 +592,7 @@ function load_detail_content(name, start, end){
 
 	var layer = $('.chipseqLabel').text().replace(/\s/g, '');	
 	var screen = end-start;
-	var chip_height = 50;
+	var chip_height = 60;
 	start -= screen;
 	end += screen;
 	chip_seq_range["pos"] = [start, end];
