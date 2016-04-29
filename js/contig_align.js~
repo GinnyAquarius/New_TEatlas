@@ -323,7 +323,7 @@ function align_contig(id){
 	$(".mini_wrap").append(function(){
 			return $("<canvas/>")
 				.attr("width",  len)
-				.attr("height", 115)
+				.attr("height", height)
 				.attr("class", "mini_browser")
 	});
 
