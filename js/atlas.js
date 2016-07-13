@@ -888,7 +888,7 @@ function run_demo(){
 $(document).ready(function() {
     SamplesLoaded();
 
-	createSmallBwtWebByAl('svgHolderT0', 'sml0', '1', 5000000, 10000000, function() {
+	createSmallBwtWebByAl('svgHolderT0', 'sml0', '1', 5000000, 10000000, 'human', function() {
 		var obj = getBwtWeb('svgHolderT0');
 		obj.addSuggestion($("#find"), function(suggestData) {
 			if (expData[suggestData['chr_id']]){
