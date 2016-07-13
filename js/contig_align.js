@@ -211,35 +211,35 @@ function draw_ruler(canvas, len){
 function draw_seq(info, ref, len){
 	var canvas = document.getElementsByClassName("mini_browser")[0].getContext("2d");
 	canvas.strokeStyle = "#6E6E6E";
+	draw_ruler(canvas, len);
+	ref = ref.toUpperCase().split("");
+	var x = 10;
+	for (var i = 0; i < ref.length; i++, x += 11)
+		draw_text(x, 45, "15px sans-serif", "#6E6E6E", ref[i], canvas);
 
-	if (info[6] != "Unknown"){
-		draw_ruler(canvas, len);
-	}
-	if (info[5] != "Unknown"){
-		ref = ref.toUpperCase().split("");
+	if (info[6] != "Unknown"){		
 		var start = ref.length, end = 0;
-
-		var x = 100;
-		for (var i = 0; i < ref.length; i++, x += 11)
-			draw_text(x, 45, "15px sans-serif", "#6E6E6E", ref[i], canvas);
-
 		var seq = info[6].split("/")
 		for (var i = 0, y = 90; i < seq.length; i++){
 			seq[i] = seq[i].split("");
 			var r = align_seq(seq[i], ref);
-			x = r.p*11 + 100;
-			if (i > 0 && (r.p > end || r.p + r.s.length < start)) y -= 25;
+			if (r["count"] < 2*seq[i].length/3){
+				seq[i].reverse();
+				r = align_seq(seq[i], ref);
+				if (r["count"] < 2*seq[i].length/3) continue;
+			}
+
+			x = r.p*11 + 10;
 			for (var k = 0, j = k + r.p; k < r.s.length && k < ref.length + r.p; k++, j++, x += 11){
 				if (ref[j] == ".") break;
-				if (r.s[k].indexOf('*') != -1){
-					draw_text(x-5, y-15, "10px sans-serif", "#6E6E6E", r.s[k][0], canvas)
-					x -= 11;
-					--j;
-				} else if (x >=100 && r.s[k] == ref[j]){
+				if (r.s[k].indexOf('*') != -1) continue;
+
+				if (x > 10 && r.s[k] == ref[j]){
+					if (j >= start && j <= end)
+						canvas.clearRect(x, y - 11, 11, 17)
 					draw_text(x, y, "15px sans-serif", "#000", r.s[k], canvas)
-					if (j < start || j > end)
-						draw_line(x+5.5, 53, x+5.5, y-17, 1, canvas)
-				} else
+					draw_line(x+5.5, 53, x+5.5, y-17, 1, canvas)
+				} else if (j < start || j > end)
 					draw_text(x, y, "15px sans-serif", txt_color[r.s[k]], r.s[k], canvas)
 			}
 			if (r.p < start)
@@ -247,29 +247,16 @@ function draw_seq(info, ref, len){
 			if (r.p + r.s.length > end){
 				end = r.p + r.s.length
 			}
-			 y += 25
 		}
-		last_left = -start*11 - 100;
-		if (last_left > 0) last_left = 0;
-		$(".mini_browser").css({"left": last_left + "px"});
+		if (start == ref.length){
+			draw_text(355, 75, "15px sans-serif", "#6E6E6E", "(Unknown)", canvas);
+		} else {
+			last_left = -start*11 - 10;
+			if (last_left > 0) last_left = 0;
+			$(".mini_browser").css({"left": last_left + "px"});
+		}
 	} else {
-		if (info[6] == "Unknown")
-			draw_text(355, 45, "15px sans-serif", "#6E6E6E", "(Unknown)", canvas);
-		else {
-			var x = 10;
-			var seq = info[6].split("/");
-			for (var i = 0; i < seq.length; i++){
-				seq[i] = seq[i].split("");
-				for (var k = 0; k < seq[i].length; k++){
-					draw_text(x, 45, "15px sans-serif", "#6E6E6E", "N", canvas);
-					draw_text(x, 90, "15px sans-serif", txt_color[seq[i][k]], seq[i][k], canvas)
-					draw_line(x+5.5, 53, x+5.5, 90-17, 1, canvas)
-					x += 11;
-				}
-				draw_text(x, 45, "15px sans-serif", "#6E6E6E", "N", canvas);
-				x += 11;
-			}
-		}
+		draw_text(355, 75, "15px sans-serif", "#6E6E6E", "(Unknown)", canvas);
 	}
 	
 }
@@ -296,41 +283,25 @@ function align_contig(id){
 	$("#detail")
 		.append("<div class='mini_wrap'><div/>")
 
-	var len = 0, height = 0, ref = '';
-	if (info[5] != "Unknown"){
-		if (TE_ref[info[5]].length > 1000){
-			ref = TE_ref[info[5]].substr(0, 500) + "..." + TE_ref[info[5]].substr(-500, 500);
-		} else
-			ref = TE_ref[info[5]];
+	var len = 0, ref = '';
+	if (TE_ref[info[5]].length > 1000){
+		ref = TE_ref[info[5]].substr(0, 500) + "..." + TE_ref[info[5]].substr(-500, 500);
+	} else
+		ref = TE_ref[info[5]];
 
-		len = ref.length*11 + 200;
-		if (info[6] != "Unknown")
-			height = info[6].split("/").length*25 + 90;
-		else
-			height = 90;
-	} else if (info[6] != "Unknown"){
-		var seq = info[6].split("/");
-		height = seq.length*25 + 90
-		len = 10;
-		for (var i = 0; i < seq.length; i++)
-			len += seq[i].length*11;
-	} else {
-		height = 90;
-		len = 780;
-	}
+	len = ref.length*11 + 20;
 
 	$(".mini_wrap").append(function(){
 			return $("<canvas/>")
 				.attr("width",  len)
-				.attr("height", height)
+				.attr("height", 90)
 				.attr("class", "mini_browser")
 	});
 	draw_seq(info, ref, len);
 
-	if (info[6] != "Unknown")
-		$(".mini_wrap")
-			.append("<div class='title'>Reference</div>")
-			.append("<div class='title' style='top: 50px'>Contigs</div>")
+	$(".mini_wrap")
+		.append("<div class='title'>Reference</div>")
+		.append("<div class='title' style='top: 50px'>Contigs</div>")
 
 	$('.mini_browser')
 		.mousedown(function(e) {
@@ -359,7 +330,7 @@ function align_contig(id){
 }
 
 function align_seq(s1, s2){
-	var r = {"s": [], "_": 0};
+	var r = {"s": [], "_": 0, "count": 0};
 	var m = 0;
 	var x, y;
 	var Matrix = []
@@ -390,7 +361,10 @@ function align_seq(s1, s2){
 	var start = false;
 	while (l1 > 0 && l2 > 0){
 		var score = -1;
-		if (s1[l1-1] == s2[l2-1]) score = 4;
+		if (s1[l1-1] == s2[l2-1]){
+			++r["count"];
+			score = 4;
+		}
 		if (Matrix[l1][l2] == Matrix[l1-1][l2-1] + score){
 			start = true;
 			r["s"].push(s1[l1-1]);

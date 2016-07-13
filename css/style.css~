@@ -849,5 +849,6 @@ hr {
 	margin: auto;
 	margin-bottom: 10px;
 	border: 1px solid;
+	display: none;
 }
 
