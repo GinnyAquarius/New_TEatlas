@@ -135,7 +135,7 @@ function query_score(layer, type){
 						//ChiP-seq signal value filter
 						$("#chipFil")
 							.attr({"data-provide": "slider"})
-							.css({width: 90%})
+							.css({width: "90%"})
 							.slider({
 								"tooltip_position": "bottom",
 								"min": minVal,

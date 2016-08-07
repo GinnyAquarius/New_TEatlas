@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e3ff49-f935-43ce-a764-6d59238826c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/atlas.js" afterPath="$PROJECT_DIR$/js/atlas.js" />
     </list>
     <ignored path="TEA.iws" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="atlas.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/atlas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
+            <state relative-caret-position="-121">
+              <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -500,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/atlas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
+        <state relative-caret-position="-121">
+          <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
