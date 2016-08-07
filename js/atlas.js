@@ -564,7 +564,7 @@ function _ShowHelper2(){
 function ShowAsLine(){
 	$('.chr-line').html('');
 	$(".gene_wrap").css({"visibility": "hidden", "height": "0"});
-	doc.style.marginTop =  $('.fixed-nav')[0].offsetHeight + 'px';
+	doc.style.marginTop = 280 + 'px';
 
 	Object.keys(chrs).map(function(name, i){
 		var style = 'width:' + (density_len[name] * 100 /1558) + '%';
@@ -596,7 +596,7 @@ function load_detail_content(name, start, end){
 	start -= screen;
 	end += screen;
 	chip_seq_range["pos"] = [start, end];
-	var sample = d3.select(".samples")
+	var sample = d3.select(".samples");
 	sample.html('').attr("height", n_file*50 + chip_height);
 
 	var chr = name.substr(3) == 'X'? 23: name.substr(3) == 'Y'? 24 : parseInt(name.substr(3));
@@ -624,7 +624,7 @@ function load_detail_content(name, start, end){
 						fill: H3K27Ac[i].col,
 						class: H3K27Ac[i].name,
 						opacity: 0.5
-					})
+					});
 				sample.append("circle")
 					.attr({
 						cx: 1100 + 10,
@@ -635,7 +635,7 @@ function load_detail_content(name, start, end){
 						fill: H3K27Ac[i].col,
 						class: H3K27Ac[i].name,
 						opacity: 0.5,
-					})
+					});
 				sample.append("text")
 					.attr({
 						x: 1100 + 15,
@@ -662,7 +662,7 @@ function load_detail_content(name, start, end){
 					})
 			}
 		}
-	})
+	});
 	
 	var extra = 0;
 	chip_seq_range["id"] = [];
@@ -745,9 +745,7 @@ function load_detail_content(name, start, end){
 function ShowChromosome(name, start, end){
 	$(".list_name").html(name.charAt(0).toUpperCase() + name.substr(1) + '<span class="caret"></span>');
 	$(".gene_wrap").css({"visibility": "visible", "height": "auto"});
-	setTimeout(function(){
-		doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
-	}, 2000);
+	doc.style.marginTop = 280 + 'px';
 
 	// Impossible states:
 	if (!chrs[name])
@@ -785,7 +783,7 @@ function ShowChromosome(name, start, end){
 		current.push(start > end ? end : start)
 		current.push(start > end ? start : end)
 		return current;
-	}
+	};
 
 	var ResizePre = function(xx){
 		var e = RangeParse(xx[0], xx[1]);
@@ -840,8 +838,7 @@ function ShowChromosome(name, start, end){
 			Resized([(ox)*size/ww, (ox + dx)*size/ww]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ox)*size/ww + ".." + (ox + dx)*size/ww, function(err) {});			
-			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
-			}
+		}
 		if (!isNaN(vx)) {
 			var s = (ix[0] + vx)*size/ww;
 			var e = (ix[1] + vx)*size/ww;
@@ -850,7 +847,6 @@ function ShowChromosome(name, start, end){
 			Resized([s, e]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + s + ".." + e, function(err) {});
-			doc.style.marginTop = (parseInt($('.fixed-nav')[0].offsetHeight) + 30) + 'px';
 		}
 		box.style.display = 'none';
 		ox = NaN, px = NaN, dx = NaN, tx = NaN, vx = NaN;
@@ -878,11 +874,6 @@ function get_server_file(id){
 			Route("#general");
 		}
 	})
-}
-
-function run_demo(){
-	expName = ["MS2A", "MS2B", "MS2C"]
-	get_server_file(expName);
 }
 
 $(document).ready(function() {
