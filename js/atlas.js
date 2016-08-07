@@ -272,7 +272,7 @@ function SamplesLoaded(){
 					$($element).addClass('success');
 				}
 				var text = '';
-				server_list.map(function(val, key){
+				$.each(server_list, function(val, key){
 					text += key + ", ";
 				});
 				$(".server_list").html(text);
