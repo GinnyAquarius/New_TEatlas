@@ -140,7 +140,8 @@ function query_score(layer, type){
 								"data-slider-max": maxVal,
 								"data-slider-step": (maxVal - minVal)/10,
 								"data-slider-value": minVal,
-								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
+								"data-slider-ticks": "[" + minVal + "," + maxVal + "]",
+								"data-slider-tooltip_position": "bottom"
 							})
 							.slider()
 							.on("change", function(){
