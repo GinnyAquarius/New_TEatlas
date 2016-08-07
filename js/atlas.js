@@ -795,26 +795,27 @@ function ShowChromosome(name, start, end){
 }
 
 function get_server_file(){
-	var id = [];
-	$.each(server_list, function(key){
-		id.push(key + ".csv");
-	});
-	$.ajax({
-		method: "get",
-		dataType: "jsonp",
-		url: " http://bioalgorithm.xyz/teatlas_ajax",
-		data: {"inf": "file", "id": id},
-		success: function(file) {
-			for (var i = 0; i < file.length; i++)
-				Parse(file[i], id[i]);
-			get_max();
-			if (file_list.length > 1)
-				get_common();
-			if (file_list.length > 2)
-				contruct_tree();
-			visibleType = visibleMode = 0;
-			Route("#general");
-		}
+	var n = Object.keys(server_list).length;
+	$.each(server_list, function(key) {
+		$.ajax({
+			method: "get",
+			dataType: "jsonp",
+			url: " http://bioalgorithm.xyz/teatlas_ajax",
+			data: {"inf": "file", "id": [key + ".csv"]},
+			success: function (file) {
+				Parse(file[0], key);
+				--n;
+				if (n == 0) {
+					get_max();
+					if (file_list.length > 1)
+						get_common();
+					if (file_list.length > 2)
+						contruct_tree();
+					visibleType = visibleMode = 0;
+					Route("#general");
+				}
+			}
+		})
 	})
 }
 
