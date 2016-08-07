@@ -137,11 +137,11 @@ function query_score(layer, type){
 							.css({width: "90%"})
 							.slider({
 								"tooltip_position": "bottom",
-								"min": minVal,
-								"max": maxVal,
-								"step": Math.floor((maxVal - minVal)/10),
+								"min": 0,
+								"max": parseInt(maxVal/10)*10,
+								"step": parseInt(maxVal/10),
 								"value": minVal,
-								"ticks": "[" + minVal + "," + maxVal + "]"
+								"ticks": "[ 0," + parseInt(maxVal/10)*10 + "]"
 							})
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
