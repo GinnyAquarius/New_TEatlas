@@ -564,7 +564,7 @@ function _ShowHelper2(){
 function ShowAsLine(){
 	$('.chr-line').html('');
 	$(".gene_wrap").css({"visibility": "hidden", "height": "0"});
-	doc.style.marginTop = 400 + 'px';
+	doc.style.marginTop =  $('.fixed-nav')[0].offsetHeight + 'px';
 
 	Object.keys(chrs).map(function(name, i){
 		var style = 'width:' + (density_len[name] * 100 /1558) + '%';
@@ -838,7 +838,7 @@ function ShowChromosome(name, start, end){
 			Resized([(ox)*size/ww, (ox + dx)*size/ww]);
 			var obj = getBwtWeb('svgHolderT0');
  			obj.search(name.substr(3)+ ":" + (ox)*size/ww + ".." + (ox + dx)*size/ww, function(err) {});			
-		}
+			}
 		if (!isNaN(vx)) {
 			var s = (ix[0] + vx)*size/ww;
 			var e = (ix[1] + vx)*size/ww;
