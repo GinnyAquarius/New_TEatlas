@@ -130,24 +130,23 @@ function query_score(layer, type){
 						minVal = minVal == 100000? 0 : minVal/100;
 						maxVal = maxVal == -100000? 0 : maxVal;
 						$(".filter")
-							.css("display", "inline-block")
+							.css("display", "inline-block");
 
 						//ChiP-seq signal value filter
 						$("#chipFil")
-							.attr({
-								"data-provide": "slider",
-								"data-slider-min": minVal,
-								"data-slider-max": maxVal,
-								"data-slider-step": (maxVal - minVal)/10,
-								"data-slider-value": minVal,
-								"data-slider-ticks": "[" + minVal + "," + maxVal + "]",
-								"data-slider-tooltip_position": "bottom"
+							.attr({"data-provide": "slider"})
+							.css({width: 90%})
+							.slider({
+								"tooltip_position": "bottom",
+								"min": minVal,
+								"max": maxVal,
+								"step": (maxVal - minVal)/10,
+								"value": minVal,
+								"ticks": "[" + minVal + "," + maxVal + "]"
 							})
-							.slider()
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
 							});
-						$("#chipFil").slider('setValue', minVal);
 					}
 				}
 			})
