@@ -1385,8 +1385,6 @@ tgatagcgacaggaggcagmcaaatgcctaggcagataggggcgggtccccggtgaaaccccaccttcaagccaaagaca
 tgtgaaatgtgatatacaaaatggcgtcactctggttcagagctctaaaatggagtcgggaagccattctaagaaggactacctgcacgacctgcaaccttgcaaaaaaaacaaaaacaacaacaaaacttgccttgaacctttgaactgggccaaaccgccacgaccacaacatcctggaaaacagctgaatttcgccagcgctgcaactcctgaacagcgacaaccaatgaactatggactcatgtactaagccagccgcctccaccaatgataattctttcaaaacaacttgtgtaatcaccctcagcttccttttaattttctcttaaaaatccctactcccctccctctcttcggaacacaatttggcttctagccgaatctgtgtctcccgaattgcaattcctaagaccccaataaacgccttgtcttactgctttgcagtctggtctttcgcctcttcttggttgaca",
 "LTR23(ERV1)": "\
 tgagaaaagaaaaaatagctyagagcagtctgagctatgtgaggtatgcaaaatttatcaggcccagagagacatgagtatgggacttcagtcatgtccctactccccctcrccatgcccgggggcaattgtttgaaggcattttgttcctgactagctgcctcatccattatcttcatgttcctggaatttgtgatacaaagaacaatgtatagccaatcaatagcywatgttattttaatgtaaattyytggtaaacaacttaaggaactscctcttctttttttcctttaaaaaccacttgtaactgctgctaattggagtgtatattcagggcaacttgaatctatgctcccaggttgcagtcctcaagcttggcccaaataaactctctacttatattaattttgcctcagctttttccttttaggttgaca",
-"SVA_A(SINE)": "\
-ctccctctccctcaccctctccccatggtctccctctccctctctttccacggtctccctctgatgccgagccgaagctggacggtactgctgccatctcggctcactgcaacctccctgcctgattctcctgcctcagcttgccgagtgcctgcgattgcaggcgcgcgccgccacgcctgactggttttcgtattttgttagtggagacggggtttcgctgtgttggccgggctggtctccagctcctaaccgcgagtgatccaccagcctcggcctcccgaggtgctgggattgcagacggagtctcgttcactcagtgctcaatgatgcccaggctggagtgcagtggcgtgatctcggctcgctacaacctccacctcccagcagcctgccttggcctcccaaagtgccgagattgcagcctctgcccggccgccaccccgtctgggaagtgaggagtgtctccgcctggccacccatcgtctgggatgtgaggagcgtctctgccctgccgcccatcgtctgagatgtggggagcacctctgcccggccgccccgtccgggatgtgaggagcgtcgctgcccggccgccccgtctgagaagtgaggagaccctctgcctggcaaccgctccatctgagaagtgaggagcccctccgcccggcagccgccctgtctgagaagtgaggagcccctccgcccagcagccacctggtccgggagggaggtgggggggtcagccccccgcccggccagccgccccgtccgggagggaggtgggggggtcagcccccagcccggccagccgccccgtccgggaagtgaggggcgcctctgcccggccgcccctactgggaagtgaggagccactttgcccggccagccactctgtccgggagggaggtgggggggtcagccccccgcccggccagccgccccgtccgggagggaggtggggggatcagccccccgcccagccagccgccccgtccgggagggaggtgggggggtcagccccccgcccggccagccgccctgtccgggaggtgaggggcgcctctgcccggccgcgcctactggaaagtgaggagcccctctgcccggccaccaccccgtctgggaggtgtgcccaacagctcattgagaaggggccatgatgacaatggcggttttgtggaatagaaaggggggaaaggtggggaaaagattgagaaatcggatggttgccgtgtctgtgtagaaagaggtagacctgggagacttttcattttgttctgtactaagaaaaattcttctgccttgggatcctgttgatcggtgaccttacccccaaccctgtgctctctgaaacatgtgctgtatccactcagggttgaatggattaagagcggtgcaagatgtgctttgttaaacagatgcttgaaggcagcatgctccttaagagtcatcaccactccctaatctcaagtacccagggacacaaacactgcggaaggccgcagggtcctctgcctaggaaaaccagagacctttgttcacttgtttatctgctgaccttccctccactattgtcctgtgaccctgccaaatccccctctgtgagaaacacccaagaatgatcaataaaaaaaaaaaaa",
 "MER73(ERV3)": "\
 tgtcataaatttgtttaatatagttgctgcctcggcatccatttttaggcctgacataagttgtttgaaacccagtcgtaccccgtcacctttggcctagttaaaacttcccctccccgtgtggttgtttgcgatatagcccgcttgttcctcatctcactgacccaaaacccaacacatcccacagctgctgaccacgataaaacctaatggtcaacaccagagtcatgtaaataagttccccccttcgcgcgtgttttctttaaactagccaatccacaacccccgtgggaaagcctaagggataatgcccatggaccttaataaaggcatagtcccacaggctctctcccctctctcttgctccccacccactggttgagctccctgccgcctccagacttcccgtcggcctcccgtcggcacccctaacctctctgggacctgtgagtaataaatttcttctgtttcatgcattttggtttcacctcctcattgtgtctcacctgacacacacacctgaacctaactttccccccagtcagggctctcctagagagtggctatcttggcttatggccactctcaagagagagacctcaagaccaaattagaaagaaaccataacaataaaaatcacaaca",
 "MSTB(ERV3)": "\
@@ -3129,4 +3127,48 @@ var lib_data = [{
 "soure": "Genomic from blood",
 "coord": [64.4, 173.9]
 }
+];
+
+var column = [
+    {
+        "field": "region",
+        "title": "Region",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }, {
+        "field": "country",
+        "title": "Country",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }, {
+        "field": "population",
+        "title": "Population",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }, {
+        "field": "sex",
+        "title": "Sex",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }, {
+        "field": "source",
+        "title": "Source",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }
 ];

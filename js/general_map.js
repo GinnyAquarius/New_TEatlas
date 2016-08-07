@@ -198,7 +198,7 @@ function remove_file(id){
 			break;
 		}
 	}
-alert("here");
+
 	--n_file;
 	get_max();
 	get_idlist();
@@ -206,9 +206,8 @@ alert("here");
 		get_common();
 	if (n_file > 2)
 		contruct_tree();
-alert();
+
 	Route();
-alert();
 }
 
 /* Calculate common differenet & tree */

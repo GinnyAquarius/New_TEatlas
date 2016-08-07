@@ -526,7 +526,8 @@ function load_detail_content(name, start, end){
 				var path = "M0 " + chip_height + " ";
 				var x = 0;
 				for (var k = 0; k < chip_seq["point"][i].length; k++, x += step){
-					var y = chip_height - chip_seq["point"][i][k]*chip_height/max_score
+					var y = chip_height - chip_seq["point"][i][k]*chip_height/max_score;
+					if (NaN(y)) y = 0;
 					path += "L" + x + " " + y + " ";
 				}
 				path += "L" + x + " " + chip_height + " z";
@@ -778,10 +779,11 @@ function get_server_file(id){
 				Parse(file[i], id[i]);
 			get_max();
 			if (file_list.length > 1)
-				get_common();
+				get_common();	
 			if (file_list.length > 2)
 				contruct_tree();
 			visibleType = visibleMode = 0;
+			console.log(id_list);
 			Route("#general");
 		}
 	})

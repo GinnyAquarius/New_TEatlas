@@ -5,12 +5,12 @@
 	<title>Transposable Elements Atlas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-table.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/heatmap.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="http://static.bioturing.com/v20160329.303/b/css/bwtweb.css?t=18">
 	<link rel="stylesheet" href="http://static.bioturing.com/v20160329.303/b/css/font-awesome.min.css">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.0.0/ocanvas.min.js"></script>
 </head>
 <body class="fix">
 <div class="fixed-nav">
@@ -31,7 +31,7 @@
 				<li><a data-map="1" class="type"> Alu</a></li>
 				<li><a data-map="2" class="type"> Line</a></li>
 				<li><a data-map="3" class="type"> Others</a></li>
-				<li><a data-map="0" class="type glyphicon glyphicon-ok"></span> All</a></li>
+				<li><a data-map="0" class="type glyphicon glyphicon-ok">All</a></li>
 			</ul>
 		</div>
 		<div class="dropdown" style="display: inline-block">
@@ -47,7 +47,7 @@
 		</div>
 		<div class="btn-group ">
 			<a class="btn btn-default library-open"><span class="glyphicon glyphicon-book"></span> Sample Library</a>
-			<input type="file" id="load" title= " Add sample(s)" multiple="true">
+			<input type="file" id="load" title= " Add sample(s)" multiple="multiple">
 			<a class="btn btn-default clear"><span class="glyphicon glyphicon-refresh"></span> Clear all</a>
 			<div class="status"> Loading files...</div>
 		</div>
@@ -116,7 +116,7 @@
 			<a class="btn btn-default showtree"><span class="glyphicon glyphicon-grain"></span> Phylogenetic tree</a>
 		</div>
 		<div class="btn-group" style="margin-right:0">
-			<button class="btn btn-default dropdown-toggle chipseqLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 3px 0px 0px 3px">
+			<button class="btn btn-default dropdown-toggle chipseqLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 3px 0 0 3px">
 				H3K27Ac <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu chipseq_layer">
@@ -127,7 +127,7 @@
 		</div>
 		<div style="display:inline-block; position: relative; font-size: 14px; top: 6px;"><b>:</b></div>
 		<div class="btn-group" style="margin-left:0">		
-			<button class="btn btn-default dropdown-toggle cellTypeLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 0px 3px 3px 0px">
+			<button class="btn btn-default dropdown-toggle cellTypeLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 0 3px 3px 0">
 				All cell type <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu cell_type">
@@ -257,21 +257,7 @@
 
 <!-- Samples Library -->
 <script data-name="library" class="template" type="text/x-handlebars-template">
-	<ul class="list-group sample-names">
-		<!-- Temporary solution -->
-		<li class="list-group-item selected" data-name="ERR1019034.csv">ERR1019034<span class="glyphicon glyphicon-ok"></span></li>
-		<li class="list-group-item selected" data-name="ERR1019035.csv">ERR1019035<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item selected" data-name="ERR1019038.csv">ERR1019038<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item selected" data-name="ERR1019039.csv">ERR1019039<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item selected" data-name="ERR1019040.csv">ERR1019040<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019041.csv">ERR1019041<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019044.csv">ERR1019044<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019045.csv">ERR1019045<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019046.csv">ERR1019046<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019047.csv">ERR1019047<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019048.csv">ERR1019048<span class="glyphicon glyphicon-ok"></span></li>	
-		<li class="list-group-item" data-name="ERR1019050.csv">ERR1019050<span class="glyphicon glyphicon-ok"></span></li>	
-	</ul>
+	<table id="lib_list"></table>
 	<div class="modal-footer">
 		<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
 		<button type="button" class="btn btn-primary get-samples">Load selected samples</button>
@@ -279,8 +265,8 @@
 </script>
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ocanvas-2.8.3.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.file-input.js"></script>
 <script type="text/javascript" src="js/d3/d3.min.js"></script>
 <script src="http://static.bioturing.com/v20160329.303/b/js/pack4.min.js"></script>
