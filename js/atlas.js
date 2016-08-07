@@ -262,11 +262,12 @@ function SamplesLoaded(){
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
 				var id = row["ID"];
+				var val = row["ID"] + "_" + row["Population"] + "_" + row["Sex"] + "_" + row["Source"];
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
 				} else {
-					server_list[id] = $element;
+					server_list[id] = val;
 					$($element).addClass('success');
 				}
 				var text = '';
@@ -775,14 +776,14 @@ function ShowChromosome(name, start, end){
 
 function get_server_file(){
 	var n = Object.keys(server_list).length;
-	$.each(server_list, function(key) {
+	$.each(server_list, function(key, val) {
 		$.ajax({
 			method: "get",
 			dataType: "jsonp",
 			url: " http://bioalgorithm.xyz/teatlas_ajax",
 			data: {"inf": "file", "id": [key + ".csv"]},
 			success: function (file) {
-				Parse(file[0], key);
+				Parse(file[0], val);
 				--n;
 				if (n == 0) {
 					if (file_list.length > 1)
