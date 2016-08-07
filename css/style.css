@@ -394,21 +394,6 @@ hr {
 	background: #aaa;
 	height: 7px;
 }
-#modal .modal-dialog {
-	width: 650px;
-}
-#modal .tree-dialog {
-	width: 700px;
-}
-
-#modal .contig_align {
-	width: 800px;
-}
-
-#modal pre {
-	border: none;
-	margin-bottom: 0;
-}
 
 .tab {
 	display: inline-block;
@@ -649,9 +634,7 @@ hr {
 	background: #666;
 }
 /* Library */
-#modal .modal-dialog.library {
-	width: 380px;
-}
+
 .sample-names {
 	margin-bottom: 0;
 }
