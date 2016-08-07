@@ -5,6 +5,7 @@
 	<title>Transposable Elements Atlas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/select2.min.css">
 	<link rel="stylesheet" href="css/bootstrap-table.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/heatmap.css">
@@ -115,7 +116,7 @@
 			<a class="btn btn-default comparision"><span class="glyphicon glyphicon-adjust"></span> <span class="txt">Group compare</span></a>
 			<a class="btn btn-default showtree"><span class="glyphicon glyphicon-grain"></span> Phylogenetic tree</a>
 		</div>
-		<div class="btn-group" style="margin-right:0">
+		<div class="btn-group" style="margin-right:0">Filter by:
 			<button class="btn btn-default dropdown-toggle chipseqLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"  style="border-radius: 3px 0 0 3px">
 				H3K27Ac <span class="caret"></span>
 			</button>
@@ -143,7 +144,7 @@
 		<div class="filter">ChiP-seq score >= <div class="chipScore">score</div>
 			<div class="chipFilHol">
 				<div class="chipMin">min</div>
-				<div class="chipFil"></div>
+				<select class="chipFil"></select>
 				<div class="chipMax">max</div>
 			</div>
 		</div>
@@ -269,6 +270,7 @@
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-table.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.file-input.js"></script>
 <script type="text/javascript" src="js/d3/d3.min.js"></script>

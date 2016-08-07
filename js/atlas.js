@@ -101,7 +101,6 @@ function Route(loc){
 }
 
 function query_score(layer, type){
-	
 	if (n_file > 0 && chip_seq_range["id"].length > 0){
 		var minVal = 100000, maxVal = -100000, count = 0, total = 0;
 		for (var i = 0; i < chip_seq_range["id"].length; i += 10, total++){
@@ -336,32 +335,11 @@ function SamplesLoaded(){
 	});
 
 	//ChiP-seq signal value filter
-	var is_fil = false, xpos = 0, left = 0, minVal, maxVal, score;
 	$(".chipFil")
-		.on("mousedown", function(e){
-			if (is_fil) is_fil = false;
-			else{
-				is_fil = true;
-				xpos = e.pageX;
-				minVal = parseFloat($(".chipMin").html())*100;
-				maxVal = parseFloat($(".chipMax").html())*100;
-			}
-		})
-		.on("mousemove", function(e){
-			if (!is_fil) return;
-			left += e.pageX - xpos;
-			if (left < 0) left = 0;
-			else if (left > 141)
-				left = 141;
-			score = parseInt(left*(maxVal-minVal)/141 + minVal)/100;
-			$(".chipScore").html(score);
-			$(this).css("left", left); 
-			xpos = e.pageX;
-			filter_score(score);
-			if (left == 0 || left == 141){
-				is_fil = false;
-			}
-		})
+		.select2()
+		.on("select2:select", function(e){
+			filter_score(e.target.selectedIndex);
+		});
 }
 
 function filter_score(score){	
@@ -517,6 +495,7 @@ function ShowAsLine(){
 	$("#content").html('');
 	if (n_file > 0)
 		general_map();
+	$(".status").css("visibility", "hidden");
 }
 
 function getMax(array) {
@@ -806,13 +785,14 @@ function get_server_file(){
 				Parse(file[0], key);
 				--n;
 				if (n == 0) {
-					get_max();
 					if (file_list.length > 1)
 						get_common();
 					if (file_list.length > 2)
 						contruct_tree();
 					visibleType = visibleMode = 0;
+					$(".status").css("visibility", "hidden");
 				}
+				get_max();
 				Route("#general");
 			}
 		})

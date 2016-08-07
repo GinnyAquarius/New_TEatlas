@@ -136,7 +136,6 @@ function general_map(){
 			.attr("id", "ruler_line")
 			.attr("style", "position: absolute; width: 2px; height:" + n_file*80 + "px; border: 1px solid; top: 0; left: 10px; visibility: hidden");
 	});
-	$(".status").css("visibility", "hidden");
 }
 
 /* Data modified */
