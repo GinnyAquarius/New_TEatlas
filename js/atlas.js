@@ -262,7 +262,8 @@ function SamplesLoaded(){
 				columns: column
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
-				var id = $element.innerText().split("\t")[0];
+				console.log(e, row, $element);
+				var id = row;
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
