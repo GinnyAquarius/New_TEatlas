@@ -140,7 +140,7 @@ function query_score(layer, type){
 								"min": 1,
 								"max": parseInt(maxVal/10)*10,
 								"step": 1 + parseInt(maxVal/10),
-								"value": minVal,
+								"value": 1,
 								"ticks": "[ 1," + parseInt(maxVal/10)*10 + "]"
 							})
 							.on("change", function(){
