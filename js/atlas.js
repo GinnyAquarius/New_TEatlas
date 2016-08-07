@@ -234,7 +234,6 @@ function SamplesLoaded(){
 	// Open Samples Library
 	$('.library-open').click(function(){
 		server_list = {};
-		var last = '';
 		Modal({
 			'title' : 'Samples Library',
 			'data'  : Template('library'),
@@ -264,7 +263,6 @@ function SamplesLoaded(){
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
 				var id = row["ID"];
-				last = id;
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
@@ -286,7 +284,7 @@ function SamplesLoaded(){
 		$('.get-samples').click(function(){
 			$(".status").css("visibility", "visible").html("Loading files...");
 			$(this).addClass('disabled').html('Loading...');
-			get_server_file(last);
+			get_server_file();
 			$('#modal').modal('hide');
 		});
 	});
@@ -797,7 +795,8 @@ function ShowChromosome(name, start, end){
 	$(".status").css("visibility", "hidden");
 }
 
-function get_server_file(last){
+function get_server_file() {
+	var n = Object.keys(server_list).length;
 	$.each(server_list, function(key) {
 		$.ajax({
 			method: "get",
@@ -813,7 +812,9 @@ function get_server_file(last){
 					contruct_tree();
 				visibleType = visibleMode = 0;
 				Route("#general");
-				if (key == last)
+				--n;
+				console.log(id_list);
+				if (n == 0)
 						$(".status").css("visibility", "hidden");
 			}
 		})

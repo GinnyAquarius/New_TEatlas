@@ -170,7 +170,9 @@ function get_idlist(){
 			for (var pos = 0; pos < expData[chr][name].length; pos++){
 				var id = expData[chr][name][pos][8];
 				console.log(id);
-				id_list[id] = tmp[id]
+				id_list[id] = 0;
+				for (var k = 1; k < tmp[id].length; k++)
+					id_list[id] = tmp[i]
 			}
 		}
 	}	
