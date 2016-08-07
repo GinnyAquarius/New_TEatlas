@@ -134,7 +134,6 @@ function query_score(layer, type){
 
 						//ChiP-seq signal value filter
 						$("#chipFil")
-							.destroy()
 							.attr({
 								"data-provide": "slider",
 								"data-slider-min": minVal,
@@ -144,6 +143,7 @@ function query_score(layer, type){
 								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
 							})
 							.slider()
+							.setValue(minVal)
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
 							});
