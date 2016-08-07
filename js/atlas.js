@@ -18,6 +18,7 @@ var expID = '';
 // Experiment Samples Data
 var expData = {}, Group = {};
 var expName = [];
+var server_list = {};
 // Page container
 var doc = $('#content')[0];
 
@@ -232,7 +233,7 @@ function SamplesLoaded(){
 
 	// Open Samples Library
 	$('.library-open').click(function(){
-		var sample = {};
+		server_list = {};
 		Modal({
 			'title' : 'Samples Library',
 			'data'  : Template('library'),
@@ -261,9 +262,19 @@ function SamplesLoaded(){
 				columns: column
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
-				console.log($element);
-				$($element).removeClass('success');
-				$($element).addClass('success');
+				var id = $element.innerText().split("\t")[0];
+				if (id in server_list) {
+					delete server_list[id];
+					$($element).removeClass('success');
+				} else {
+					server_list[id] = $element;
+					$($element).addClass('success');
+				}
+				var text = '';
+				_.each(server_list, function(val, key){
+					text += key + ", ";
+				});
+				$(".server_list").html(text);
 			});
 
 		// Loading

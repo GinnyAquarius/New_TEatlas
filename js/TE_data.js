@@ -3310,13 +3310,6 @@ var lib_data = [
 
 var column = [
     {
-        "field": "state",
-        "checkbox": "true",
-        "halign": "center",
-        "align": "center",
-        "colspan": 1,
-        "rowspan": 1
-    }, {
         "field": "ID",
         "title": "ID",
         "halign": "center",

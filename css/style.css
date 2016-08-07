@@ -654,33 +654,16 @@ hr {
 	padding: 10px;
 }
 .lib_list{
+	position: relative;
 	display: block;
 	margin: auto;
 	padding: 10px;
 }
-.sample-names {
-	margin-bottom: 0;
-}
-.sample-names li {
-	border-radius: 0 !important;
-	cursor: pointer;
-	border: none;
-}
-.sample-names li span {
-	float: right;
-	color: #eee
-}
-.sample-names li.selected, .sample-names li.loaded {
-	background: rgba(0,0,0,0.03)
-}
-.sample-names li.selected span {
-	color: #000
-}
-.sample-names li.loaded span {
-	color: #20B100;
-}
-.sample-names li:hover {
-	background: rgba(0,0,80,0.04)
+
+.server_list {
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 .chr-btn {
