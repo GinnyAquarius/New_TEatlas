@@ -809,7 +809,6 @@ function get_server_file(){
 				if (file_list.length > 2)
 					contruct_tree();
 				visibleType = visibleMode = 0;
-				console.log(id_list);
 				Route("#general");
 			}
 		})
