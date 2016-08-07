@@ -1,7 +1,7 @@
 function show_TE(id, checked){
 	if (checked)
 		$("."+id).css("visibility", "visible");
-	else		
+	else
 		$("."+id).css("visibility", "hidden");
 }
 
@@ -12,7 +12,7 @@ function calculate_ratio(mode, name, chr, pos, type){
 		return density_map[chr][name][pos][type]/d_max;
 	else if (mode == 1)
 		return density_map[chr][name][pos][type+3]/d_max;
-	else 
+	else
 		return (density_map[chr][name][pos][type]-density_map[chr][name][pos][type+3])/d_max;
 }
 
@@ -22,7 +22,7 @@ function get_check(mode){
 	    	$("#All").prop("checked", true);
 	else if (mode == 1)
 	    	$("#Common").prop("checked", true);
-	else 
+	else
 		$("#Diff").prop("checked", true);
 
 }
@@ -160,7 +160,7 @@ function get_max(){
 }
 
 function get_idlist(){
-	var tmp = (JSON.parse(JSON.stringify(id_list)))
+	var tmp = (JSON.parse(JSON.stringify(id_list)));
 	id_list = {};
 	for (var chr in expData){
 		if (chr.localeCompare("map") == 0) continue;
@@ -206,8 +206,9 @@ function remove_file(id){
 		get_common();
 	if (n_file > 2)
 		contruct_tree();
-
+alert();
 	Route();
+alert();
 }
 
 /* Calculate common differenet & tree */
