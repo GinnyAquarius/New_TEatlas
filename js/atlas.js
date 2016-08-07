@@ -130,7 +130,7 @@ function query_score(layer, type){
 						minVal = minVal == 100000? 0 : minVal/100;
 						maxVal = maxVal == -100000? 0 : maxVal;
 						$(".filter")
-							.css("display", "inline-block");
+							.css("display", "inline-block")
 							.append(function(){
 								return $("<input/>")
 									.attr({
