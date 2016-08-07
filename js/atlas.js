@@ -223,7 +223,8 @@ function SamplesLoaded(){
 						contruct_tree();
 						$(".status").html("Contructing tree...");
 					}
-					Route();
+					Route()
+					$(".status").css("visibility", "hidden");
 				}
 			};
 			reader.readAsText(f);
@@ -262,7 +263,7 @@ function SamplesLoaded(){
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
 				var id = row["ID"];
-				var val = row["ID"] + "_" + row["Population"] + "_" + row["Sex"] + "_" + row["Source"];
+				var val = row["ID"] + "_" + row["population"] + "_" + row["sex"] + "_" + row["source"];
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
@@ -496,7 +497,6 @@ function ShowAsLine(){
 	$("#content").html('');
 	if (n_file > 0)
 		general_map();
-	$(".status").css("visibility", "hidden");
 }
 
 function getMax(array) {
