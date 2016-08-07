@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32e3ff49-f935-43ce-a764-6d59238826c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/TE_data.js" afterPath="$PROJECT_DIR$/js/TE_data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/atlas.js" afterPath="$PROJECT_DIR$/js/atlas.js" />
     </list>
     <ignored path="TEA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="atlas.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="atlas.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/atlas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="248" column="32" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
+            <state relative-caret-position="456">
+              <caret line="273" column="2" selection-start-line="273" selection-start-column="2" selection-end-line="273" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -52,8 +53,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="652" column="16" selection-start-line="652" selection-start-column="4" selection-end-line="652" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="650" column="10" selection-start-line="650" selection-start-column="3" selection-end-line="650" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -69,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TE_data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TE_data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/TE_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="3134" column="0" selection-start-line="3134" selection-start-column="0" selection-end-line="3134" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="3132" column="4" selection-start-line="3132" selection-start-column="4" selection-end-line="3132" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -103,8 +104,8 @@
         <option value="$PROJECT_DIR$/js/general_map.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/atlas.js" />
         <option value="$PROJECT_DIR$/js/TE_data.js" />
+        <option value="$PROJECT_DIR$/js/atlas.js" />
       </list>
     </option>
   </component>
@@ -470,21 +471,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/js/TE_data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="652" column="16" selection-start-line="652" selection-start-column="4" selection-end-line="652" selection-end-column="16" />
+        <state relative-caret-position="245">
+          <caret line="3132" column="4" selection-start-line="3132" selection-start-column="4" selection-end-line="3132" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/atlas.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="248" column="32" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="650" column="10" selection-start-line="650" selection-start-column="3" selection-end-line="650" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -499,11 +498,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/TE_data.js">
+    <entry file="file://$PROJECT_DIR$/js/atlas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="3134" column="0" selection-start-line="3134" selection-start-column="0" selection-end-line="3134" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="456">
+          <caret line="273" column="2" selection-start-line="273" selection-start-column="2" selection-end-line="273" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -232,6 +232,7 @@ function SamplesLoaded(){
 
 	// Open Samples Library
 	$('.library-open').click(function(){
+		var sample = {};
 		Modal({
 			'title' : 'Samples Library',
 			'data'  : Template('library'),
@@ -258,30 +259,19 @@ function SamplesLoaded(){
 			.bootstrapTable({
 				data: lib_data,
 				columns: column
+			})
+			.on('click-row.bs.table', function (e, row, $element) {
+				console.log($element);
+				$($element).removeClass('success');
+				$($element).addClass('success');
 			});
-
-		// Loaded
-		expName.map(function(name){
-			$('.library li.selected').removeClass('selected');
-			$('[data-name="'+name+'"]').addClass('loaded');
-		});
-
-		// Check on/off
-		$('.library li:not(.loaded)').click(function(){
-			$(this)[$(this).hasClass('selected') ? 'removeClass' : 'addClass']('selected');
-		});
 
 		// Loading
 		$('.get-samples').click(function(){
 			$(".status").css("visibility", "visible").html("Loading files...");
 			$(this).addClass('disabled').html('Loading...');
-			var samples = [];
-			$('.library li.selected').each(function(){
-				samples.push($(this).data('name'));
-				expName.push($(this).data('name'));
-				$('[data-name="'+name+'"]').addClass('loaded');
-			});
-			get_server_file(samples);
+
+//			get_server_file(samples);
 			$('#modal').modal('hide');
 		});
 	});
