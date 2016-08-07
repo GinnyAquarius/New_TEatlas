@@ -237,6 +237,7 @@ function SamplesLoaded(){
 			'data'  : Template('library'),
 			'class' : 'library'
 		});
+		$(".lib_list").css({width: $(window).width()*0.8});
 	    $("#lib_list")
 			.html('')
 			.attr({
@@ -255,11 +256,6 @@ function SamplesLoaded(){
 				"data-show-columns": true,
 				"class": "table table-striped",
 				"role": "button"
-			})
-			.css({
-				width: $(window).width()*0.8,
-				margin: "auto",
-				padding: 10
 			})
 			.bootstrapTable({
 				data: lib_data,

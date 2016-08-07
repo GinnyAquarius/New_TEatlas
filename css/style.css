@@ -653,6 +653,11 @@ hr {
 	width: auto;
 	padding: 10px;
 }
+.lib_list{
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
 .sample-names {
 	margin-bottom: 0;
 }
