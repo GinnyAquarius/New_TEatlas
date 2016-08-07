@@ -564,7 +564,7 @@ function _ShowHelper2(){
 function ShowAsLine(){
 	$('.chr-line').html('');
 	$(".gene_wrap").css({"visibility": "hidden", "height": "0"});
-	doc.style.marginTop = 280 + 'px';
+	doc.style.marginTop = 310 + 'px';
 
 	Object.keys(chrs).map(function(name, i){
 		var style = 'width:' + (density_len[name] * 100 /1558) + '%';
@@ -745,7 +745,7 @@ function load_detail_content(name, start, end){
 function ShowChromosome(name, start, end){
 	$(".list_name").html(name.charAt(0).toUpperCase() + name.substr(1) + '<span class="caret"></span>');
 	$(".gene_wrap").css({"visibility": "visible", "height": "auto"});
-	doc.style.marginTop = 280 + 'px';
+	doc.style.marginTop = 310 + 'px';
 
 	// Impossible states:
 	if (!chrs[name])
