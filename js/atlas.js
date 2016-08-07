@@ -127,9 +127,6 @@ function query_score(layer, type){
 
 					++count;
 					if (count == total){
-						minVal = minVal == 100000? 1 : minVal/100;
-						maxVal = maxVal == -100000? 1 : maxVal;
-						var step = parseInt((maxVal - minVal)/10);
 						$(".filter")
 							.css("display", "inline-block")
 							.html('Filter by chip-seq score: <input id="chipFil"></input>');
@@ -140,11 +137,11 @@ function query_score(layer, type){
 							.css({width: "90%"})
 							.slider({
 								"tooltip_position": "bottom",
-								"min": maxVal - 9*step,
+								"min": minVal,
 								"max": maxVal,
-								"step": step,
-								"value": maxVal - 9*step,
-								"ticks": "[" + (maxVal - 9*step) + "," + maxVal + "]"
+								"step": Math.floor((maxVal - minVal)/10),
+								"value": minVal,
+								"ticks": "[" + minVal + "," + maxVal + "]"
 							})
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
