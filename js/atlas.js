@@ -143,10 +143,10 @@ function query_score(layer, type){
 								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
 							})
 							.slider()
-							.setValue(minVal)
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
 							});
+						$("#chipFil").slider('setValue', minVal);
 					}
 				}
 			})

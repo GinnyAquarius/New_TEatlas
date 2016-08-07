@@ -753,9 +753,9 @@ hr {
 .filter {
 	position: relative;
 	display: none;
-	margin-left: 15px;
-	margin-top: 15px;
-	width: 150px;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 120px;
 }
 
 #all_contig {
