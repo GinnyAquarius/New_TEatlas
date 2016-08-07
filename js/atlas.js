@@ -272,7 +272,7 @@ function SamplesLoaded(){
 					$($element).addClass('success');
 				}
 				var text = '';
-				$.each(server_list, function(val, key){
+				$.each(server_list, function(key){
 					text += key + ", ";
 				});
 				$(".server_list").html(text);
