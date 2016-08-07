@@ -650,9 +650,9 @@ hr {
 }
 /* Library */
 #modal .modal-dialog.library {
-	display: inline-block;
+	width: auto;
+	padding: 10px;
 }
-
 .lib_list{
 	display: block;
 	margin: auto;
