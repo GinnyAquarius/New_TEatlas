@@ -3132,7 +3132,7 @@ var lib_data = [{
 var column = [
     {
         "field": "state",
-        "radio": "true",
+        "checkbox": "true",
         "halign": "center",
         "align": "center",
         "colspan": 1,

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32e3ff49-f935-43ce-a764-6d59238826c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/TE_data.js" afterPath="$PROJECT_DIR$/js/TE_data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/atlas.js" afterPath="$PROJECT_DIR$/js/atlas.js" />
     </list>
     <ignored path="TEA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/js/TE_data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="3134" column="24" selection-start-line="3134" selection-start-column="24" selection-end-line="3134" selection-end-column="24" />
+              <caret line="3134" column="0" selection-start-line="3134" selection-start-column="0" selection-end-line="3134" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -504,7 +502,7 @@
     <entry file="file://$PROJECT_DIR$/js/TE_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="3134" column="24" selection-start-line="3134" selection-start-column="24" selection-end-line="3134" selection-end-column="24" />
+          <caret line="3134" column="0" selection-start-line="3134" selection-start-column="0" selection-end-line="3134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
