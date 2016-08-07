@@ -234,6 +234,7 @@ function SamplesLoaded(){
 	// Open Samples Library
 	$('.library-open').click(function(){
 		server_list = {};
+		var last = '';
 		Modal({
 			'title' : 'Samples Library',
 			'data'  : Template('library'),
@@ -263,6 +264,7 @@ function SamplesLoaded(){
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
 				var id = row["ID"];
+				last = id;
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
@@ -284,7 +286,7 @@ function SamplesLoaded(){
 		$('.get-samples').click(function(){
 			$(".status").css("visibility", "visible").html("Loading files...");
 			$(this).addClass('disabled').html('Loading...');
-			get_server_file();
+			get_server_file(last);
 			$('#modal').modal('hide');
 		});
 	});
@@ -517,6 +519,7 @@ function ShowAsLine(){
 	$("#content").html('');
 	if (n_file > 0)
 		general_map();
+	$(".status").css("visibility", "hidden");
 }
 
 function getMax(array) {
@@ -794,7 +797,7 @@ function ShowChromosome(name, start, end){
 	$(".status").css("visibility", "hidden");
 }
 
-function get_server_file(){
+function get_server_file(last){
 	$.each(server_list, function(key) {
 		$.ajax({
 			method: "get",
@@ -810,6 +813,8 @@ function get_server_file(){
 					contruct_tree();
 				visibleType = visibleMode = 0;
 				Route("#general");
+				if (key == last)
+						$(".status").css("visibility", "hidden");
 			}
 		})
 	});
