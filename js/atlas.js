@@ -252,7 +252,6 @@ function SamplesLoaded(){
 				"data-pagination": true,
 				"data-search": true,
 				"data-show-refresh": true,
-				"data-show-toggle": true,
 				"data-show-columns": true,
 				"class": "table table-striped",
 				"role": "button"
