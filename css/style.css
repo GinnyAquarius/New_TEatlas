@@ -753,8 +753,7 @@ hr {
 .filter {
 	position: relative;
 	display: none;
-	margin-left: 20px;
-	margin-top: 30px;
+	bottom: -10px;
 	width: 200px;
 	text-align: center;
 }

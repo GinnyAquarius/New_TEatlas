@@ -127,8 +127,8 @@ function query_score(layer, type){
 
 					++count;
 					if (count == total){
-						minVal = minVal == 100000? 0 : minVal/100;
-						maxVal = maxVal == -100000? 0 : maxVal;
+						minVal = minVal == 100000? 1 : minVal/100;
+						maxVal = maxVal == -100000? 1 : maxVal;
 						$(".filter")
 							.css("display", "inline-block")
 							.html('Filter by chip-seq score: <input id="chipFil"></input>');
