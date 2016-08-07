@@ -263,7 +263,7 @@ function SamplesLoaded(){
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
 				console.log(e, row, $element);
-				var id = row;
+				var id = row["ID"];
 				if (id in server_list) {
 					delete server_list[id];
 					$($element).removeClass('success');
@@ -272,7 +272,7 @@ function SamplesLoaded(){
 					$($element).addClass('success');
 				}
 				var text = '';
-				_.each(server_list, function(val, key){
+				server_list.forEach(function(val, key){
 					text += key + ", ";
 				});
 				$(".server_list").html(text);
