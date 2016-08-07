@@ -246,7 +246,7 @@ function SamplesLoaded(){
 					type: 'owner',
 					sort: 'updated',
 					direction: 'desc',
-					per_page: 8,
+					per_page: 10,
 					page: 1
 				},
 				"data-pagination": true,
