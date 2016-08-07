@@ -131,22 +131,22 @@ function query_score(layer, type){
 						maxVal = maxVal == -100000? 0 : maxVal;
 						$(".filter")
 							.css("display", "inline-block")
-							.append(function(){
-								return $("<input/>")
-									.attr({
-										"data-provide": "slider",
-										"data-slider-min": minVal,
-										"data-slider-max": maxVal,
-										"data-slider-step": (maxVal - minVal)/10,
-										"data-slider-value": minVal,
-										"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
-									})
-									.slider()
-									.on("change", function(){
-										filter_score($(this).slider('getValue'));
-									});
-							});
 
+						//ChiP-seq signal value filter
+						$("#chipFil")
+							.destroy()
+							.attr({
+								"data-provide": "slider",
+								"data-slider-min": minVal,
+								"data-slider-max": maxVal,
+								"data-slider-step": (maxVal - minVal)/10,
+								"data-slider-value": minVal,
+								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
+							})
+							.slider()
+							.on("change", function(){
+								filter_score($(this).slider('getValue'));
+							});
 					}
 				}
 			})
