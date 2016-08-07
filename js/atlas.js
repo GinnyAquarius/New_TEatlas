@@ -258,7 +258,7 @@ function SamplesLoaded(){
 			})
 			.css({
 				width: $(window).width()*0.8,
-				margin: auto,
+				margin: "auto",
 				padding: 10
 			})
 			.bootstrapTable({
