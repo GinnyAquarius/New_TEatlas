@@ -148,6 +148,8 @@ hr {
 	display: block;
 	width: 1115px;
 	margin: auto;
+	height: auto;
+	max-height: 200px;
 }
 
 .gene_wrap {

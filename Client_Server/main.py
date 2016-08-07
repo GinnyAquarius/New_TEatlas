@@ -36,7 +36,7 @@ def get_chip_seq(layer, start, end, name):
 		f += "100000"
 		step = 100000
 
-	for i in range(0, 6):
+	for i in range(0, 7):
 		file_path ="%s.%d.bin" %  (f,i) 
 		chip_seq["point"].append([])
 		inp = open(file_path, "r")
