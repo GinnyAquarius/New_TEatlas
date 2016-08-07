@@ -800,7 +800,7 @@ function get_server_file(){
 			method: "get",
 			dataType: "jsonp",
 			url: " http://bioalgorithm.xyz/teatlas_ajax",
-			data: {"inf": "file", "id": [key]},
+			data: {"inf": "file", "id": [key + ".csv"]},
 			success: function (file) {
 				Parse(file[0], id[0]);
 				get_max();
