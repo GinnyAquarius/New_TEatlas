@@ -127,11 +127,27 @@ function query_score(layer, type){
 
 					++count;
 					if (count == total){
-						$(".chipMin").html(minVal == 100000? 0 : minVal/100);
-						$(".chipScore").html(minVal == 100000? 0 : minVal/100);
-						$(".chipMax").html(maxVal == -100000? 0 : maxVal);
-						$(".chipFil").css("left", "0px");
+						minVal = minVal == 100000? 0 : minVal/100;
+						maxVal = maxVal == -100000? 0 : maxVal;
+						$(".chipMin").html(minVal);
+						$(".chipScore").html(minVal);
+						$(".chipMax").html(maxVal);
 						$(".filter").css("display", "inline-block");
+
+						//ChiP-seq signal value filter
+						$(".chipFil")
+							.attr({
+								"data-provide": "slider",
+								"data-slider-min": minVal,
+								"data-slider-max": maxVal,
+								"data-slider-step": (maxVal - minVal)/10,
+								"data-slider-value": minVal,
+								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
+							})
+							.slider()
+							.on("change", function(){
+								filter_score($(this).slider('getValue'));
+							});
 					}
 				}
 			})
@@ -335,13 +351,6 @@ function SamplesLoaded(){
 
 		ShowChromosome(name, x1, x2);
 	});
-
-	//ChiP-seq signal value filter
-	$(".chipFil")
-		.select2()
-		.on("select2:select", function(e){
-			filter_score(e.target.selectedIndex);
-		});
 }
 
 function filter_score(score){	
