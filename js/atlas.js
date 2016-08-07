@@ -262,7 +262,6 @@ function SamplesLoaded(){
 				columns: column
 			})
 			.on('click-row.bs.table', function (e, row, $element) {
-				console.log(e, row, $element);
 				var id = row["ID"];
 				if (id in server_list) {
 					delete server_list[id];
@@ -801,7 +800,7 @@ function get_server_file(id){
 			method: "get",
 			dataType: "jsonp",
 			url: " http://bioalgorithm.xyz/teatlas_ajax",
-			data: {"inf": "file", "id": key},
+			data: {"inf": "file", "id": [key]},
 			success: function (file) {
 				Parse(file[0], id[0]);
 				get_max();
