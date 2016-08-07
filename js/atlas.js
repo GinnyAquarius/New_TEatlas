@@ -148,6 +148,7 @@ function query_score(layer, type){
 							.on("change", function(){
 								filter_score($(this).slider('getValue'));
 							});
+						console.log(minVal, maxVal, parseInt((maxVal - minVal)/10));
 					}
 				}
 			})
@@ -380,7 +381,7 @@ function disable_button(){
 		$('.move-c a, .move-c button').addClass("disabled");
 		$('.zoom-c a').addClass("disabled");
 		$('.cellTypeLabel').addClass("disabled");
-		$('.cell_type').addClass("disabled");
+		$('.chipseqLabel').addClass("disabled");
 		$('.chipseq_layer a, .chipseq_layer button').addClass('disabled');
 	} else {
 		$('.chr-view-mode a').addClass('disabled');
@@ -388,7 +389,7 @@ function disable_button(){
 		$('.move-c a, .move-c button').removeClass('disabled');
 		$('.zoom-c a').removeClass('disabled');
 		$('.cellTypeLabel').removeClass("disabled");
-		$('.cell_type').removeClass("disabled");
+		$('.chipseqLabel').removeClass("disabled");
 		$('.chipseq_layer a, .chipseq_layer button').removeClass('disabled');
 	}
 }
