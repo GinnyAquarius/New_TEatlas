@@ -802,7 +802,7 @@ function get_server_file(){
 			url: " http://bioalgorithm.xyz/teatlas_ajax",
 			data: {"inf": "file", "id": [key + ".csv"]},
 			success: function (file) {
-				Parse(file[0], id[0]);
+				Parse(file[0], key);
 				get_max();
 				if (file_list.length > 1)
 					get_common();
