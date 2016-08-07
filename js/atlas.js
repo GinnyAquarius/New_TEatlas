@@ -812,8 +812,8 @@ function get_server_file(){
 					if (file_list.length > 2)
 						contruct_tree();
 					visibleType = visibleMode = 0;
-					Route("#general");
 				}
+				Route("#general");
 			}
 		})
 	})
