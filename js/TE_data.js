@@ -1775,1362 +1775,1556 @@ cagggccggcttcatgggcgtgcgacctgtgcagtcgcacagggccccgcgctcagaagggccccgcgcttggtttaatg
 tgtgaacaaatgtgaacctgaaagagccaatccttcaagatggatcccgagtggctaactgggcctaaatttaaaatagagccaagcggccatttgctgactagaggtcacacacgtactctgagttccccgaaaacccacacctctgtttaactttgggactttcagagctcacctgaaccaaccaatcagagctcacctgcmtcaaccaatcagggctcagctgtatcaaccaatcagaactcagctgtgtcaaccaatcagaactaagcaagtttgaatccttcatttgcataaacggacctgattgggaacctgggcaggaacttttgctataaaacccaaaccctccctttgttctctggaaccgcaccttcgttttacaccgaaggctgcatctccccggtttgcaaactgttcactggaataaagtctctttcctccaaattccttttcagagaacttttgttcaca"
 };
 
-var lib_data = [{
-"population": "Balochi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [30.5, 66.5]
-},
-{
-"population": "Japanese",
-"region": "EastAsia",
-"country": "Japan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [38, 138]
-},
-{
-"population": "Naxi",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [26, 100]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Adygei",
-"region": "WestEurasia",
-"country": "Russia(Caucasus)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [44, 39]
-},
-{
-"population": "BantuKenya",
-"region": "Africa",
-"country": "Kenya",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-3, 37]
-},
-{
-"population": "Basque",
-"region": "WestEurasia",
-"country": "France",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43, 0]
-},
-{
-"population": "Basque",
-"region": "WestEurasia",
-"country": "France",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43, 0]
-},
-{
-"population": "BedouinB",
-"region": "WestEurasia",
-"country": "Israel(Negev)",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [31, 35]
-},
-{
-"population": "Bougainville",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-6, 155]
-},
-{
-"population": "Brahui",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [30.5, 66.5]
-},
-{
-"population": "Brahui",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [30.5, 66.5]
-},
-{
-"population": "Burusho",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [36.5, 74]
-},
-{
-"population": "Han",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [32.3, 114]
-},
-{
-"population": "Han",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [32.3, 114]
-},
-{
-"population": "Lahu",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [22, 100]
-},
-{
-"population": "Makrani",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [26, 64]
-},
-{
-"population": "Makrani",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [26, 64]
-},
-{
-"population": "Miao",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [28, 109]
-},
-{
-"population": "Miao",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [28, 109]
-},
-{
-"population": "Orcadian",
-"region": "WestEurasia",
-"country": "OrkneyIslands",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [59, -3]
-},
-{
-"population": "Orcadian",
-"region": "WestEurasia",
-"country": "OrkneyIslands",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [59, -3]
-},
-{
-"population": "Pathan",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [33.5, 70.5]
-},
-{
-"population": "Pathan",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [33.5, 70.5]
-},
-{
-"population": "Piapoco",
-"region": "America",
-"country": "Colombia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [3, -68]
-},
-{
-"population": "Piapoco",
-"region": "America",
-"country": "Colombia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [3, -68]
-},
-{
-"population": "Sardinian",
-"region": "WestEurasia",
-"country": "Italy(Sardinia)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [40, 9]
-},
-{
-"population": "Sardinian",
-"region": "WestEurasia",
-"country": "Italy(Sardinia)",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [40, 9]
-},
-{
-"population": "Surui",
-"region": "America",
-"country": "Brazil",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-11, -62]
-},
-{
-"population": "Tu",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [36, 101]
-},
-{
-"population": "Ju_hoan_North",
-"region": "Africa",
-"country": "Namibia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-18.9, 21.5]
-},
-{
-"population": "Ju_hoan_North",
-"region": "Africa",
-"country": "Namibia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-18.9, 21.5]
-},
-{
-"population": "Mbuti",
-"region": "Africa",
-"country": "Congo",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [1, 29]
-},
-{
-"population": "Naxi",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [26, 100]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Balochi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [30.49871492, 66.5]
-},
-{
-"population": "Bergamo",
-"region": "WestEurasia",
-"country": "Italy(Bergamo)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [46, 10]
-},
-{
-"population": "Atayal",
-"region": "EastAsia",
-"country": "Taiwan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [24.611712, 121.296444]
-},
-{
-"population": "Chechen",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43.3, 45.7]
-},
-{
-"population": "Somali",
-"region": "Africa",
-"country": "Kenya",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [5.6, 48.3]
-},
-{
-"population": "Mozabite",
-"region": "Africa",
-"country": "Algeria",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [32, 3]
-},
-{
-"population": "Mozabite",
-"region": "Africa",
-"country": "Algeria",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [32, 3]
-},
-{
-"population": "Pima",
-"region": "America",
-"country": "Mexico",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [29, -108]
-},
-{
-"population": "Pima",
-"region": "America",
-"country": "Mexico",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [29, -108]
-},
-{
-"population": "Russian",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [61, 40]
-},
-{
-"population": "Russian",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [61, 40]
-},
-{
-"population": "Palestinian",
-"region": "WestEurasia",
-"country": "Israel(Central)",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [32, 35]
-},
-{
-"population": "Abkhasian",
-"region": "WestEurasia",
-"country": "Abkhazia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [43, 41]
-},
-{
-"population": "Ami",
-"region": "EastAsia",
-"country": "Taiwan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [22.843145, 121.185356]
-},
-{
-"population": "Biaka",
-"region": "Africa",
-"country": "Central African Republic",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [4, 17]
-},
-{
-"population": "Biaka",
-"region": "Africa",
-"country": "Central African Republic",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [4, 17]
-},
-{
-"population": "Bulgarian",
-"region": "WestEurasia",
-"country": "Bulgaria",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [42.2, 24.7]
-},
-{
-"population": "Bulgarian",
-"region": "WestEurasia",
-"country": "Bulgaria",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [42.2, 24.7]
-},
-{
-"population": "Burusho",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [36.5, 74]
-},
-{
-"population": "Cambodian",
-"region": "EastAsia",
-"country": "Cambodia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [12, 105]
-},
-{
-"population": "Cambodian",
-"region": "EastAsia",
-"country": "Cambodia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [12, 105]
-},
-{
-"population": "Druze",
-"region": "WestEurasia",
-"country": "Israel(Carmel)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [32, 35]
-},
-{
-"population": "Esan",
-"region": "Africa",
-"country": "Nigeria",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [6.5, 6]
-},
-{
-"population": "Georgian",
-"region": "WestEurasia",
-"country": "Georgia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [42.5, 41.9]
-},
-{
-"population": "Hazara",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [33.5, 70]
-},
-{
-"population": "Hezhen",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [47.5, 133.5]
-},
-{
-"population": "Icelandic",
-"region": "WestEurasia",
-"country": "Iceland",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [64.1, -21.9]
-},
-{
-"population": "Iranian",
-"region": "WestEurasia",
-"country": "Iran",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [35.6, 51.5]
-},
-{
-"population": "Kalash",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [36, 71.5]
-},
-{
-"population": "Karitiana",
-"region": "America",
-"country": "Brazil",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-10, -63]
-},
-{
-"population": "Karitiana",
-"region": "America",
-"country": "Brazil",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-10, -63]
-},
-{
-"population": "Kinh",
-"region": "EastAsia",
-"country": "Vietnam",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [21, 105.9]
-},
-{
-"population": "Kinh",
-"region": "EastAsia",
-"country": "Vietnam",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [21, 105.9]
-},
-{
-"population": "Mandenka",
-"region": "Africa",
-"country": "Senegal",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [12, -12]
-},
-{
-"population": "Mandenka",
-"region": "Africa",
-"country": "Senegal",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [12, -12]
-},
-{
-"population": "Mayan",
-"region": "America",
-"country": "Mexico",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [19, -91]
-},
-{
-"population": "Mayan",
-"region": "America",
-"country": "Mexico",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [19, -91]
-},
-{
-"population": "Mongola",
-"region": "CentralAsiaSiberia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [45, 111]
-},
-{
-"population": "Mongola",
-"region": "CentralAsiaSiberia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [45, 111]
-},
-{
-"population": "Oroqen",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [50.4, 126.5]
-},
-{
-"population": "Sindhi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [25.5, 69]
-},
-{
-"population": "Sindhi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [25.5, 69]
-},
-{
-"population": "Tujia",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [29, 109]
-},
-{
-"population": "Tuscan",
-"region": "WestEurasia",
-"country": "Italy(Tuscany)",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [43, 11]
-},
-{
-"population": "Tuscan",
-"region": "WestEurasia",
-"country": "Italy(Tuscany)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43, 11]
-},
-{
-"population": "Uygur",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [44, 81]
-},
-{
-"population": "Xibo",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43.5, 81.5]
-},
-{
-"population": "Yoruba",
-"region": "Africa",
-"country": "Nigeria",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [7.4, 3.9]
-},
-{
-"population": "Yoruba",
-"region": "Africa",
-"country": "Nigeria",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [7.4, 3.9]
-},
-{
-"population": "Finnish",
-"region": "WestEurasia",
-"country": "Finland",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [60.2, 24.9]
-},
-{
-"population": "Palestinian",
-"region": "WestEurasia",
-"country": "Israel(Central)",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [32, 35]
-},
-{
-"population": "Punjabi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [31.5, 74.3]
-},
-{
-"population": "Punjabi",
-"region": "SouthAsia",
-"country": "Pakistan",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [31.5, 74.3]
-},
-{
-"population": "Finnish",
-"region": "WestEurasia",
-"country": "Finland",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [60.2, 24.9]
-},
-{
-"population": "Luhya",
-"region": "Africa",
-"country": "Kenya",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [1.3, 36.8]
-},
-{
-"population": "Tubalar",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [51.13333333, 87]
-},
-{
-"population": "Yakut",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [63, 129.5]
-},
-{
-"population": "Jordanian",
-"region": "WestEurasia",
-"country": "Jordan",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [32.1, 35.9]
-},
-{
-"population": "Luo",
-"region": "Africa",
-"country": "Kenya",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [-0.1, 34.3]
-},
-{
-"population": "English",
-"region": "WestEurasia",
-"country": "England",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [51.2, 0.7]
-},
-{
-"population": "Luhya",
-"region": "Africa",
-"country": "Kenya",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [1.3, 36.8]
-},
-{
-"population": "Tubalar",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [51.13333333, 87]
-},
-{
-"population": "Yi",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [28, 103]
-},
-{
-"population": "Armenian",
-"region": "WestEurasia",
-"country": "Armenia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [40.2, 44.5]
-},
-{
-"population": "Estonian",
-"region": "WestEurasia",
-"country": "Estonia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [58.5, 24.9]
-},
-{
-"population": "Lezgin",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [42.1, 48.2]
-},
-{
-"population": "Greek",
-"region": "WestEurasia",
-"country": "Greece",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [38, 23.7]
-},
-{
-"population": "Bengali",
-"region": "SouthAsia",
-"country": "Bangladesh",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [23.7, 90.4]
-},
-{
-"population": "Gambian",
-"region": "Africa",
-"country": "Gambia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [13.4, 16.7]
-},
-{
-"population": "Mende",
-"region": "Africa",
-"country": "SierraLeone",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [8.5, -13.2]
-},
-{
-"population": "Ulchi",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [52.37, 140.45]
-},
-{
-"population": "Yi",
-"region": "EastAsia",
-"country": "China",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [28, 103]
-},
-{
-"population": "Estonian",
-"region": "WestEurasia",
-"country": "Estonia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [58.4, 24.9]
-},
-{
-"population": "Lezgin",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [42.1, 48.2]
-},
-{
-"population": "Bengali",
-"region": "SouthAsia",
-"country": "Bangladesh",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [23.7, 90.4]
-},
-{
-"population": "Gambian",
-"region": "Africa",
-"country": "Gambia",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [13.4, 16.7]
-},
-{
-"population": "Mende",
-"region": "Africa",
-"country": "SierraLeone",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [8.5, -13.2]
-},
-{
-"population": "Ulchi",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [52.43, 140.42]
-},
-{
-"population": "BantuKenya",
-"region": "Africa",
-"country": "Kenya",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-3, 37]
-},
-{
-"population": "Tujia",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [29, 109]
-},
-{
-"population": "Aleut",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [55.18, 166]
-},
-{
-"population": "Greek",
-"region": "WestEurasia",
-"country": "Greece",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [38, 23.7]
-},
-{
-"population": "Thai",
-"region": "EastAsia",
-"country": "Thailand",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [13.8, 100.5]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Zapotec",
-"region": "America",
-"country": "Mexico",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [16.5, -97.2]
-},
-{
-"population": "Dai",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [21, 100]
-},
-{
-"population": "Uygur",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [44, 81]
-},
-{
-"population": "Eskimo_Sireniki",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [64.4, 173.9]
-},
-{
-"population": "Even",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [57.53, 135.88]
-},
-{
-"population": "Icelandic",
-"region": "WestEurasia",
-"country": "Iceland",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [64.1, -21.9]
-},
-{
-"population": "Thai",
-"region": "EastAsia",
-"country": "Thailand",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [13.8, 100.5]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Dinka",
-"region": "Africa",
-"country": "Sudan",
-"sex": "male",
-"soure": "Genomic from saliva",
-"coord": [8.8, 27.4]
-},
-{
-"population": "Iranian",
-"region": "WestEurasia",
-"country": "Iran",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [35.6, 51.5]
-},
-{
-"population": "Xibo",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [43.5, 81.5]
-},
-{
-"population": "Chukchi",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [69, 169]
-},
-{
-"population": "Even",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [57.53, 135.88]
-},
-{
-"population": "Korean",
-"region": "EastAsia",
-"country": "Korea",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [37.6, 127]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Kusunda",
-"region": "SouthAsia",
-"country": "Nepal",
-"sex": "male",
-"soure": "Genomic from saliva",
-"coord": [28.07245287, 82.48778]
-},
-{
-"population": "Yakut",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [63, 129.5]
-},
-{
-"population": "Eskimo_Chaplin",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [64.48, 172.86]
-},
-{
-"population": "Tlingit",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [55.18, 166]
-},
-{
-"population": "Korean",
-"region": "EastAsia",
-"country": "Korea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [37.6, 127]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Kusunda",
-"region": "SouthAsia",
-"country": "Nepal",
-"sex": "male",
-"soure": "Genomic from saliva",
-"coord": [28.07245287, 84.259486]
-},
-{
-"population": "Lahu",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [22, 100]
-},
-{
-"population": "BantuHerero",
-"region": "Africa",
-"country": "BotswanaOrNamibia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-22, 19]
-},
-{
-"population": "Tlingit",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [53, 158.65]
-},
-{
-"population": "Masai",
-"region": "Africa",
-"country": "Kenya",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-1.5, 35.2]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Naxi",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [26, 100]
-},
-{
-"population": "North_Ossetian",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [43, 44.7]
-},
-{
-"population": "Mixe",
-"region": "America",
-"country": "Mexico",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [16.95, 96.58]
-},
-{
-"population": "She",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [27, 119]
-},
-{
-"population": "Eskimo_Naukan",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [66.02, 169.71]
-},
-{
-"population": "Mansi",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [63.8, 61.45]
-},
-{
-"population": "Masai",
-"region": "Africa",
-"country": "Kenya",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-1.5, 35.2]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "North_Ossetian",
-"region": "WestEurasia",
-"country": "Russia",
-"sex": "male",
-"soure": "Genomic from blood",
-"coord": [43, 44.7]
-},
-{
-"population": "Mixe",
-"region": "America",
-"country": "Mexico",
-"sex": "female",
-"soure": "Genomic from cell lines",
-"coord": [16.95, 96.58]
-},
-{
-"population": "BantuTswana",
-"region": "Africa",
-"country": "BotswanaOrNamibia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-28, 24]
-},
-{
-"population": "Eskimo_Naukan",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [66.02, 169.71]
-},
-{
-"population": "Mansi",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [63.65, 62.1]
-},
-{
-"population": "Ami",
-"region": "EastAsia",
-"country": "Taiwan",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [22.843145, 121.185356]
-},
-{
-"population": "Papuan",
-"region": "Oceania",
-"country": "PapuaNewGuinea",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-4, 143]
-},
-{
-"population": "Ju_hoan_North",
-"region": "Africa",
-"country": "Namibia",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [-18.9, 21.5]
-},
-{
-"population": "Mixtec",
-"region": "America",
-"country": "Mexico",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [17, -97]
-},
-{
-"population": "Tu",
-"region": "EastAsia",
-"country": "China",
-"sex": "male",
-"soure": "Genomic from cell lines",
-"coord": [36, 101]
-},
-{
-"population": "Aleut",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [55.18, 166]
-},
-{
-"population": "Eskimo_Sireniki",
-"region": "CentralAsiaSiberia",
-"country": "Russia",
-"sex": "female",
-"soure": "Genomic from blood",
-"coord": [64.4, 173.9]
-}
+var lib_data = [
+    {
+        "ID": "ERR1025602",
+        "population": "Mozabite",
+        "region": "Africa",
+        "country": "Algeria",
+        "coord": [32, 3],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025601",
+        "population": "Mozabite",
+        "region": "Africa",
+        "country": "Algeria",
+        "coord": [32, 3],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347714",
+        "population": "BantuHerero",
+        "region": "Africa",
+        "country": "BotswanaOrNamibia",
+        "coord": [-22, 19],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347732",
+        "population": "BantuTswana",
+        "region": "Africa",
+        "country": "BotswanaOrNamibia",
+        "coord": [-28, 24],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025612",
+        "population": "Biaka",
+        "region": "Africa",
+        "country": "Central African Republic",
+        "coord": [4, 17],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025613",
+        "population": "Biaka",
+        "region": "Africa",
+        "country": "Central African Republic",
+        "coord": [4, 17],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019078",
+        "population": "Mbuti",
+        "region": "Africa",
+        "country": "Congo",
+        "coord": [1, 29],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347677",
+        "population": "Gambian",
+        "region": "Africa",
+        "country": "Gambia",
+        "coord": [13.4, 16.7],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347670",
+        "population": "Gambian",
+        "region": "Africa",
+        "country": "Gambia",
+        "coord": [13.4, 16.7],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019044",
+        "population": "BantuKenya",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [-3, 37],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025600",
+        "population": "Somali",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [5.6, 48.3],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347660",
+        "population": "Luo",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [-0.1, 34.3],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347662",
+        "population": "Luhya",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [1.3, 36.8],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347655",
+        "population": "Luhya",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [1.3, 36.8],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347680",
+        "population": "BantuKenya",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [-3, 37],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347716",
+        "population": "Masai",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [-1.5, 35.2],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347726",
+        "population": "Masai",
+        "region": "Africa",
+        "country": "Kenya",
+        "coord": [-1.5, 35.2],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019075",
+        "population": "Ju_hoan_North",
+        "region": "Africa",
+        "country": "Namibia",
+        "coord": [-18.9, 21.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019076",
+        "population": "Ju_hoan_North",
+        "region": "Africa",
+        "country": "Namibia",
+        "coord": [-18.9, 21.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347737",
+        "population": "Ju_hoan_North",
+        "region": "Africa",
+        "country": "Namibia",
+        "coord": [-18.9, 21.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025622",
+        "population": "Esan",
+        "region": "Africa",
+        "country": "Nigeria",
+        "coord": [6.5, 6],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025657",
+        "population": "Yoruba",
+        "region": "Africa",
+        "country": "Nigeria",
+        "coord": [7.4, 3.9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025658",
+        "population": "Yoruba",
+        "region": "Africa",
+        "country": "Nigeria",
+        "coord": [7.4, 3.9],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025641",
+        "population": "Mandenka",
+        "region": "Africa",
+        "country": "Senegal",
+        "coord": [12, -12],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025640",
+        "population": "Mandenka",
+        "region": "Africa",
+        "country": "Senegal",
+        "coord": [12, -12],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347678",
+        "population": "Mende",
+        "region": "Africa",
+        "country": "SierraLeone",
+        "coord": [8.5, -13.2],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347671",
+        "population": "Mende",
+        "region": "Africa",
+        "country": "SierraLeone",
+        "coord": [8.5, -13.2],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347694",
+        "population": "Dinka",
+        "region": "Africa",
+        "country": "Sudan",
+        "coord": [8.8, 27.4],
+        "sex": "male",
+        "source": "Genomic from saliva"
+    },
+    {
+        "ID": "ERR1019070",
+        "population": "Surui",
+        "region": "America",
+        "country": "Brazil",
+        "coord": [-11, -62],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025636",
+        "population": "Karitiana",
+        "region": "America",
+        "country": "Brazil",
+        "coord": [-10, -63],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025635",
+        "population": "Karitiana",
+        "region": "America",
+        "country": "Brazil",
+        "coord": [-10, -63],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019066",
+        "population": "Piapoco",
+        "region": "America",
+        "country": "Colombia",
+        "coord": [3, -68],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019067",
+        "population": "Piapoco",
+        "region": "America",
+        "country": "Colombia",
+        "coord": [3, -68],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025604",
+        "population": "Pima",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [29, -108],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025642",
+        "population": "Mayan",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [19, -91],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025643",
+        "population": "Mayan",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [19, -91],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347721",
+        "population": "Mixe",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [16.95, 96.58],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347730",
+        "population": "Mixe",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [16.95, 96.58],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025603",
+        "population": "Pima",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [29, -108],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347686",
+        "population": "Zapotec",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [16.5, -97.2],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347738",
+        "population": "Mixtec",
+        "region": "America",
+        "country": "Mexico",
+        "coord": [17, -97],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025645",
+        "population": "Mongola",
+        "region": "CentralAsiaSiberia",
+        "country": "China",
+        "coord": [45, 111],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025644",
+        "population": "Mongola",
+        "region": "CentralAsiaSiberia",
+        "country": "China",
+        "coord": [45, 111],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347657",
+        "population": "Tubalar",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [51.13333333, 87],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347658",
+        "population": "Yakut",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [63, 129.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347663",
+        "population": "Tubalar",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [51.13333333, 87],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347672",
+        "population": "Ulchi",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [52.37, 140.45],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347679",
+        "population": "Ulchi",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [52.43, 140.42],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347690",
+        "population": "Even",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [57.53, 135.88],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347708",
+        "population": "Tlingit",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [55.18, 166],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347724",
+        "population": "Eskimo_Naukan",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [66.02, 169.71],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347733",
+        "population": "Eskimo_Naukan",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [66.02, 169.71],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347734",
+        "population": "Mansi",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [63.65, 62.1],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347740",
+        "population": "Aleut",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [55.18, 166],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347741",
+        "population": "Eskimo_Sireniki",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [64.4, 173.9],
+        "sex": "female",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1019034",
+        "population": "Altaian",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [51.9, 86],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347682",
+        "population": "Aleut",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [55.18, 166],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347689",
+        "population": "Eskimo_Sireniki",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [64.4, 173.9],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347698",
+        "population": "Chukchi",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [69, 169],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347699",
+        "population": "Even",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [57.53, 135.88],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347705",
+        "population": "Yakut",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [63, 129.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347706",
+        "population": "Eskimo_Chaplin",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [64.48, 172.86],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347715",
+        "population": "Tlingit",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [53, 158.65],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347720",
+        "population": "North_Ossetian",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [43, 44.7],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347725",
+        "population": "Mansi",
+        "region": "CentralAsiaSiberia",
+        "country": "Russia",
+        "coord": [63.8, 61.45],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1025618",
+        "population": "Cambodian",
+        "region": "EastAsia",
+        "country": "Cambodia",
+        "coord": [12, 105],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025617",
+        "population": "Cambodian",
+        "region": "EastAsia",
+        "country": "Cambodia",
+        "coord": [12, 105],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019055",
+        "population": "Han",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [32.3, 114],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019057",
+        "population": "Lahu",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [22, 100],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019061",
+        "population": "Miao",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [28, 109],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019072",
+        "population": "Tu",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [36, 101],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019079",
+        "population": "Naxi",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [26, 100],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025628",
+        "population": "Hezhen",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [47.5, 133.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025647",
+        "population": "Oroqen",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [50.4, 126.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025652",
+        "population": "Tujia",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [29, 109],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025655",
+        "population": "Uygur",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [44, 81],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347673",
+        "population": "Yi",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [28, 103],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019039",
+        "population": "Naxi",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [26, 100],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019056",
+        "population": "Han",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [32.3, 114],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019060",
+        "population": "Miao",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [28, 109],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025656",
+        "population": "Xibo",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [43.5, 81.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347664",
+        "population": "Yi",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [28, 103],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347681",
+        "population": "Tujia",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [29, 109],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347687",
+        "population": "Dai",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [21, 100],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347688",
+        "population": "Uygur",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [44, 81],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347697",
+        "population": "Xibo",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [43.5, 81.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347713",
+        "population": "Lahu",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [22, 100],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347719",
+        "population": "Naxi",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [26, 100],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347722",
+        "population": "She",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [27, 119],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347739",
+        "population": "Tu",
+        "region": "EastAsia",
+        "country": "China",
+        "coord": [36, 101],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019038",
+        "population": "Japanese",
+        "region": "EastAsia",
+        "country": "Japan",
+        "coord": [38, 138],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347700",
+        "population": "Korean",
+        "region": "EastAsia",
+        "country": "Korea",
+        "coord": [37.6, 127],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347709",
+        "population": "Korean",
+        "region": "EastAsia",
+        "country": "Korea",
+        "coord": [37.6, 127],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025598",
+        "population": "Atayal",
+        "region": "EastAsia",
+        "country": "Taiwan",
+        "coord": [24.611712, 121.296444],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025610",
+        "population": "Ami",
+        "region": "EastAsia",
+        "country": "Taiwan",
+        "coord": [22.843145, 121.185356],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347735",
+        "population": "Ami",
+        "region": "EastAsia",
+        "country": "Taiwan",
+        "coord": [22.843145, 121.185356],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347692",
+        "population": "Thai",
+        "region": "EastAsia",
+        "country": "Thailand",
+        "coord": [13.8, 100.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347684",
+        "population": "Thai",
+        "region": "EastAsia",
+        "country": "Thailand",
+        "coord": [13.8, 100.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025637",
+        "population": "Kinh",
+        "region": "EastAsia",
+        "country": "Vietnam",
+        "coord": [21, 105.9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025638",
+        "population": "Kinh",
+        "region": "EastAsia",
+        "country": "Vietnam",
+        "coord": [21, 105.9],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019048",
+        "population": "Bougainville",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-6, 155],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019080",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347711",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347718",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019040",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347685",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347693",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347701",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347702",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347710",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347717",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347727",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347736",
+        "population": "Papuan",
+        "region": "Oceania",
+        "country": "PapuaNewGuinea",
+        "coord": [-4, 143],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347676",
+        "population": "Bengali",
+        "region": "SouthAsia",
+        "country": "Bangladesh",
+        "coord": [23.7, 90.4],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347669",
+        "population": "Bengali",
+        "region": "SouthAsia",
+        "country": "Bangladesh",
+        "coord": [23.7, 90.4],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347703",
+        "population": "Kusunda",
+        "region": "SouthAsia",
+        "country": "Nepal",
+        "coord": [28.07245287, 82.48778],
+        "sex": "male",
+        "source": "Genomic from saliva"
+    },
+    {
+        "ID": "ERR1347712",
+        "population": "Kusunda",
+        "region": "SouthAsia",
+        "country": "Nepal",
+        "coord": [28.07245287, 84.259486],
+        "sex": "male",
+        "source": "Genomic from saliva"
+    },
+    {
+        "ID": "ERR1019052",
+        "population": "Burusho",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [36.5, 74],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019059",
+        "population": "Makrani",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [26, 64],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019065",
+        "population": "Pathan",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [33.5, 70.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025634",
+        "population": "Kalash",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [36, 71.5],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025649",
+        "population": "Sindhi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [25.5, 69],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025664",
+        "population": "Punjabi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [31.5, 74.3],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019035",
+        "population": "Balochi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [30.5, 66.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019050",
+        "population": "Brahui",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [30.5, 66.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019051",
+        "population": "Brahui",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [30.5, 66.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019058",
+        "population": "Makrani",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [26, 64],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019064",
+        "population": "Pathan",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [33.5, 70.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019081",
+        "population": "Balochi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [30.49871492, 66.5],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025616",
+        "population": "Burusho",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [36.5, 74],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025626",
+        "population": "Hazara",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [33.5, 70],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025648",
+        "population": "Sindhi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [25.5, 69],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025663",
+        "population": "Punjabi",
+        "region": "SouthAsia",
+        "country": "Pakistan",
+        "coord": [31.5, 74.3],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025608",
+        "population": "Abkhasian",
+        "region": "WestEurasia",
+        "country": "Abkhazia",
+        "coord": [43, 41],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347665",
+        "population": "Armenian",
+        "region": "WestEurasia",
+        "country": "Armenia",
+        "coord": [40.2, 44.5],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1025614",
+        "population": "Bulgarian",
+        "region": "WestEurasia",
+        "country": "Bulgaria",
+        "coord": [42.2, 24.7],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1025615",
+        "population": "Bulgarian",
+        "region": "WestEurasia",
+        "country": "Bulgaria",
+        "coord": [42.2, 24.7],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347661",
+        "population": "English",
+        "region": "WestEurasia",
+        "country": "England",
+        "coord": [51.2, 0.7],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347666",
+        "population": "Estonian",
+        "region": "WestEurasia",
+        "country": "Estonia",
+        "coord": [58.5, 24.9],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347674",
+        "population": "Estonian",
+        "region": "WestEurasia",
+        "country": "Estonia",
+        "coord": [58.4, 24.9],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1025659",
+        "population": "Finnish",
+        "region": "WestEurasia",
+        "country": "Finland",
+        "coord": [60.2, 24.9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1346534",
+        "population": "Finnish",
+        "region": "WestEurasia",
+        "country": "Finland",
+        "coord": [60.2, 24.9],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019045",
+        "population": "Basque",
+        "region": "WestEurasia",
+        "country": "France",
+        "coord": [43, 0],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019046",
+        "population": "Basque",
+        "region": "WestEurasia",
+        "country": "France",
+        "coord": [43, 0],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025623",
+        "population": "Georgian",
+        "region": "WestEurasia",
+        "country": "Georgia",
+        "coord": [42.5, 41.9],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347668",
+        "population": "Greek",
+        "region": "WestEurasia",
+        "country": "Greece",
+        "coord": [38, 23.7],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347683",
+        "population": "Greek",
+        "region": "WestEurasia",
+        "country": "Greece",
+        "coord": [38, 23.7],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025631",
+        "population": "Icelandic",
+        "region": "WestEurasia",
+        "country": "Iceland",
+        "coord": [64.1, -21.9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347691",
+        "population": "Icelandic",
+        "region": "WestEurasia",
+        "country": "Iceland",
+        "coord": [64.1, -21.9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025632",
+        "population": "Iranian",
+        "region": "WestEurasia",
+        "country": "Iran",
+        "coord": [35.6, 51.5],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347695",
+        "population": "Iranian",
+        "region": "WestEurasia",
+        "country": "Iran",
+        "coord": [35.6, 51.5],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1025619",
+        "population": "Druze",
+        "region": "WestEurasia",
+        "country": "Israel(Carmel)",
+        "coord": [32, 35],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025607",
+        "population": "Palestinian",
+        "region": "WestEurasia",
+        "country": "Israel(Central)",
+        "coord": [32, 35],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025662",
+        "population": "Palestinian",
+        "region": "WestEurasia",
+        "country": "Israel(Central)",
+        "coord": [32, 35],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019047",
+        "population": "BedouinB",
+        "region": "WestEurasia",
+        "country": "Israel(Negev)",
+        "coord": [31, 35],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019082",
+        "population": "Bergamo",
+        "region": "WestEurasia",
+        "country": "Italy(Bergamo)",
+        "coord": [46, 10],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019069",
+        "population": "Sardinian",
+        "region": "WestEurasia",
+        "country": "Italy(Sardinia)",
+        "coord": [40, 9],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019068",
+        "population": "Sardinian",
+        "region": "WestEurasia",
+        "country": "Italy(Sardinia)",
+        "coord": [40, 9],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025653",
+        "population": "Tuscan",
+        "region": "WestEurasia",
+        "country": "Italy(Tuscany)",
+        "coord": [43, 11],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025654",
+        "population": "Tuscan",
+        "region": "WestEurasia",
+        "country": "Italy(Tuscany)",
+        "coord": [43, 11],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347659",
+        "population": "Jordanian",
+        "region": "WestEurasia",
+        "country": "Jordan",
+        "coord": [32.1, 35.9],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1019063",
+        "population": "Orcadian",
+        "region": "WestEurasia",
+        "country": "OrkneyIslands",
+        "coord": [59, -3],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1019062",
+        "population": "Orcadian",
+        "region": "WestEurasia",
+        "country": "OrkneyIslands",
+        "coord": [59, -3],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025606",
+        "population": "Russian",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [61, 40],
+        "sex": "female",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025599",
+        "population": "Chechen",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [43.3, 45.7],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1025605",
+        "population": "Russian",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [61, 40],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    },
+    {
+        "ID": "ERR1347667",
+        "population": "Lezgin",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [42.1, 48.2],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347675",
+        "population": "Lezgin",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [42.1, 48.2],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1347729",
+        "population": "North_Ossetian",
+        "region": "WestEurasia",
+        "country": "Russia",
+        "coord": [43, 44.7],
+        "sex": "male",
+        "source": "Genomic from blood"
+    },
+    {
+        "ID": "ERR1019041",
+        "population": "Adygei",
+        "region": "WestEurasia",
+        "country": "Russia(Caucasus)",
+        "coord": [44, 39],
+        "sex": "male",
+        "source": "Genomic from cell lines"
+    }
 ];
 
 var column = [
     {
+        "field": "state",
+        "checkbox": "true",
+        "halign": "center",
+        "align": "center",
+        "colspan": 1,
+        "rowspan": 1
+    }, {
+        "field": "ID",
+        "title": "ID",
+        "halign": "center",
+        "align": "center",
+        "sortable": true,
+        "colspan": 1,
+        "rowspan": 1
+    }, {
         "field": "region",
         "title": "Region",
         "halign": "center",
@@ -3163,7 +3357,7 @@ var column = [
         "colspan": 1,
         "rowspan": 1
     }, {
-        "field": "soure",
+        "field": "source",
         "title": "Source",
         "halign": "center",
         "align": "center",
