@@ -129,24 +129,23 @@ function query_score(layer, type){
 					if (count == total){
 						minVal = minVal == 100000? 0 : minVal/100;
 						maxVal = maxVal == -100000? 0 : maxVal;
-						$(".chipMin").html(minVal);
-						$(".chipScore").html(minVal);
-						$(".chipMax").html(maxVal);
-						$(".filter").css("display", "inline-block");
-
-						//ChiP-seq signal value filter
-						$(".chipFil")
-							.attr({
-								"data-provide": "slider",
-								"data-slider-min": minVal,
-								"data-slider-max": maxVal,
-								"data-slider-step": (maxVal - minVal)/10,
-								"data-slider-value": minVal,
-								"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
-							})
-							.slider()
-							.on("change", function(){
-								filter_score($(this).slider('getValue'));
+						$(".filter")
+							.css("display", "inline-block");
+							.append(function(){
+								return $("<input/>")
+									.attr({
+										"data-provide": "slider",
+										"data-slider-min": minVal,
+										"data-slider-max": maxVal,
+										"data-slider-step": (maxVal - minVal)/10,
+										"data-slider-value": minVal,
+										"data-slider-ticks": "[" + minVal + "," + maxVal + "]"
+									})
+									.css({"width": "100%", "margin": 5})
+									.slider()
+									.on("change", function(){
+										filter_score($(this).slider('getValue'));
+									});
 							});
 					}
 				}
@@ -374,7 +373,7 @@ function disable_button(){
 		$('.showtree').removeClass("disabled");
 
 	if (location.hash == "#general"){
-		$(".filter").css("display", "none");
+		$(".filter").html('').css("display", "none");
 		$('.chr-view-mode a').removeClass('disabled');
 		$('.chr-view-mode .asline').addClass('disabled');
 		$('.move-c a, .move-c button').addClass("disabled");
@@ -516,7 +515,7 @@ function load_detail_content(name, start, end){
 	$(".detail_content").css("margin-left", "-1100px");
 	$(".pop_up").remove();
 	$('.cellTypeLabel').html('All cell type <span class="caret"></span>');
-	$(".filter").css("display", "none");
+	$(".filter").html('').css("display", "none");
 
 	var layer = $('.chipseqLabel').text().replace(/\s/g, '');	
 	var screen = end-start;
