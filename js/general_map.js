@@ -198,7 +198,7 @@ function remove_file(id){
 			break;
 		}
 	}
-
+alert("here");
 	--n_file;
 	get_max();
 	get_idlist();
