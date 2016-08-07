@@ -272,9 +272,12 @@ function SamplesLoaded(){
 					$($element).addClass('success');
 				}
 				var text = '';
+				var n = 0;
 				$.each(server_list, function(key){
-					text += key + ", ";
+					++n;
+					if (n < 7) text += key + ", ";
 				});
+				if (n > 6) text += "... and " + (n - 6) + "others";
 				$(".server_list").html(text);
 			});
 
@@ -282,8 +285,7 @@ function SamplesLoaded(){
 		$('.get-samples').click(function(){
 			$(".status").css("visibility", "visible").html("Loading files...");
 			$(this).addClass('disabled').html('Loading...');
-
-//			get_server_file(samples);
+			get_server_file();
 			$('#modal').modal('hide');
 		});
 	});
@@ -794,24 +796,25 @@ function ShowChromosome(name, start, end){
 }
 
 function get_server_file(id){
-	$.ajax({
-		method: "get",
-		dataType: "jsonp",
-		url: " http://bioalgorithm.xyz/teatlas_ajax",
-		data: {"inf": "file", "id": id},
-		success: function(file) {
-			for (var i = 0; i < file.length; i++)
-				Parse(file[i], id[i]);
-			get_max();
-			if (file_list.length > 1)
-				get_common();
-			if (file_list.length > 2)
-				contruct_tree();
-			visibleType = visibleMode = 0;
-			console.log(id_list);
-			Route("#general");
-		}
-	})
+	$.each(id, function(key) {
+		$.ajax({
+			method: "get",
+			dataType: "jsonp",
+			url: " http://bioalgorithm.xyz/teatlas_ajax",
+			data: {"inf": "file", "id": key},
+			success: function (file) {
+				Parse(file[0], id[0]);
+				get_max();
+				if (file_list.length > 1)
+					get_common();
+				if (file_list.length > 2)
+					contruct_tree();
+				visibleType = visibleMode = 0;
+				console.log(id_list);
+				Route("#general");
+			}
+		})
+	});
 }
 
 $(document).ready(function() {
