@@ -136,6 +136,7 @@ function general_map(){
 			.attr("id", "ruler_line")
 			.attr("style", "position: absolute; width: 2px; height:" + n_file*80 + "px; border: 1px solid; top: 0; left: 10px; visibility: hidden");
 	});
+	$(".status").css("visibility", "hidden");
 }
 
 /* Data modified */
@@ -168,8 +169,7 @@ function get_idlist(){
 			if (name.localeCompare("map") == 0) continue;
 
 			for (var pos = 0; pos < expData[chr][name].length; pos++){
-				var id = expData[chr][name][pos][8];
-				console.log(id);
+				var id = expData[chr][name][pos][7];
 				id_list[id] = 0;
 				for (var k = 1; k < tmp[id].length; k++)
 					id_list[id] = tmp[i]
