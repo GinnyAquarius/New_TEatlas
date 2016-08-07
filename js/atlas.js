@@ -237,6 +237,30 @@ function SamplesLoaded(){
 			'data'  : Template('library'),
 			'class' : 'library'
 		});
+	    $("#lib_list")
+			.html('')
+			.attr({
+				"data-toggle": "table",
+				"data-query-params": {
+					type: 'owner',
+					sort: 'updated',
+					direction: 'desc',
+					per_page: 10,
+					page: 1
+				},
+				"data-pagination": true,
+				"data-search": true,
+				"data-show-refresh": true,
+				"data-show-toggle": true,
+				"data-show-columns": true,
+				"class": "table table-striped",
+				"role": "button"
+			})
+			.bootstrapTable({
+				data: lib_data,
+				columns: column
+			});
+
 		// Loaded
 		expName.map(function(name){
 			$('.library li.selected').removeClass('selected');
@@ -527,7 +551,7 @@ function load_detail_content(name, start, end){
 				var x = 0;
 				for (var k = 0; k < chip_seq["point"][i].length; k++, x += step){
 					var y = chip_height - chip_seq["point"][i][k]*chip_height/max_score;
-					if (NaN(y)) y = 0;
+					if (isNaN(y)) y = 0;
 					path += "L" + x + " " + y + " ";
 				}
 				path += "L" + x + " " + chip_height + " z";
@@ -779,7 +803,7 @@ function get_server_file(id){
 				Parse(file[i], id[i]);
 			get_max();
 			if (file_list.length > 1)
-				get_common();	
+				get_common();
 			if (file_list.length > 2)
 				contruct_tree();
 			visibleType = visibleMode = 0;
