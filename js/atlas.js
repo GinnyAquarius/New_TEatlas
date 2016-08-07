@@ -794,8 +794,8 @@ function ShowChromosome(name, start, end){
 	$(".status").css("visibility", "hidden");
 }
 
-function get_server_file(id){
-	$.each(id, function(key) {
+function get_server_file(){
+	$.each(server_list, function(key) {
 		$.ajax({
 			method: "get",
 			dataType: "jsonp",
