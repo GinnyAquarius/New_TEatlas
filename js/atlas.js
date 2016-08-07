@@ -256,6 +256,11 @@ function SamplesLoaded(){
 				"class": "table table-striped",
 				"role": "button"
 			})
+			.css({
+				width: $(window).width()*0.8,
+				margin: auto,
+				padding: 10
+			})
 			.bootstrapTable({
 				data: lib_data,
 				columns: column
