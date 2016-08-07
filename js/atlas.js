@@ -237,7 +237,7 @@ function SamplesLoaded(){
 			'data'  : Template('library'),
 			'class' : 'library'
 		});
-		$(".lib_list").css({width: $(window).width()*0.8});
+		$(".lib_list").css({width: $(window).width()*0.9});
 	    $("#lib_list")
 			.html('')
 			.attr({
@@ -252,7 +252,6 @@ function SamplesLoaded(){
 				"data-pagination": true,
 				"data-search": true,
 				"data-show-refresh": true,
-				"data-show-columns": true,
 				"class": "table table-striped",
 				"role": "button"
 			})
