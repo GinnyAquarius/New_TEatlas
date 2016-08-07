@@ -131,6 +131,7 @@ function query_score(layer, type){
 						maxVal = maxVal == -100000? 0 : maxVal;
 						$(".filter")
 							.css("display", "inline-block");
+							.html('Filter by chip-seq score: <input id="chipFil"></input>')
 
 						//ChiP-seq signal value filter
 						$("#chipFil")
@@ -140,7 +141,7 @@ function query_score(layer, type){
 								"tooltip_position": "bottom",
 								"min": minVal,
 								"max": maxVal,
-								"step": (maxVal - minVal)/10,
+								"step": parseInt((maxVal - minVal)/10),
 								"value": minVal,
 								"ticks": "[" + minVal + "," + maxVal + "]"
 							})
@@ -378,12 +379,16 @@ function disable_button(){
 		$('.chr-view-mode .asline').addClass('disabled');
 		$('.move-c a, .move-c button').addClass("disabled");
 		$('.zoom-c a').addClass("disabled");
+		$('.cellTypeLabel').addClass("disabled");
+		$('.cell_type').addClass("disabled");
 		$('.chipseq_layer a, .chipseq_layer button').addClass('disabled');
 	} else {
 		$('.chr-view-mode a').addClass('disabled');
 		$('.chr-view-mode .asline').removeClass('disabled');
 		$('.move-c a, .move-c button').removeClass('disabled');
 		$('.zoom-c a').removeClass('disabled');
+		$('.cellTypeLabel').removeClass("disabled");
+		$('.cell_type').removeClass("disabled");
 		$('.chipseq_layer a, .chipseq_layer button').removeClass('disabled');
 	}
 }
